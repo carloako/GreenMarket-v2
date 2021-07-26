@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link href="../stylesheet.css" rel="stylesheet">
+		<link href="../P5_P6-style.css" rel="stylesheet">
+		<link href="../P7_P12-style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">Green Market</a>
+			<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link active" href="../index.html">Home</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../aisle.html">Aisle</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../index.html">About</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../login.html">Log-in</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../shoppingcart.html">Cart</a> </li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div>
+		<form class="edit-order-form form-check">
+			<label class="order-title-lbl">
+				<h2>Edit order</h2>
+			</label>
+			<div class="form-group">
+				<label for="order-id">Order ID</label>
+				<input type="text" class="form-control" id="order-id">
+			</div>
+			<div class="form-group">
+				<label for="order-id">Name</label>
+				<input type="text" class="form-control" id="order-id">
+			</div>
+			<div class="form-group">
+				<label for="order-id">Address</label>
+				<input type="text" class="form-control" id="order-id">
+			</div>
+			<div class="form-group dropdown">
+				<label for="order-id">Payment method</label>
+				<button class="edit-btn btn btn-secondary dropdown-toggle" type="button" id="paymentDropdownBtn"
+					data-bs-toggle="dropdown" aria-expanded="false">
+					None
+				</button>
+				<ul class="payment-dropdown dropdown-menu" aria-labelledby="paymentDropdownBtn">
+					<li><a class="payment-dropdown-item dropdown-item" href="#">Visa</a></li>
+					<li><a class="payment-dropdown-item dropdown-item" href="#">Mastercard</a></li>
+					<li><a class="payment-dropdown-item dropdown-item" href="#">Paypal</a></li>
+				</ul>
+			</div>
+			<button style="float: right; margin-right: 10%;" type="submit" class="edit-btn btn btn-primary">Save</button>
+		</form>
+	</div>
+
+ <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="top-footer d-flex justify-content-center justify-content-lg-between border-bottom">
+                <span>&nbsp;</span>
+            </section>
+            <section class="info-footer d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <a>
+                    <p>Concordia University, SOEN 287 Project</p>
+                    <p>© Team Green, 2021</p>
+                </a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

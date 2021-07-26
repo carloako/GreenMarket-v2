@@ -1,0 +1,53 @@
+/* This page is the template used for the login page and the sign up form
+
+This template doesn't address the theme colors, but works to define the design of
+this group of pages. */
+
+/* design of the header specific to P5-P6 and P7-P12 */
+.p-header {
+
+}
+
+/* design of the body */
+body {
+    font-family: Montserrat;
+}
+
+/* Form Style input */
+body input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cbd6b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Sign up button style*/
+body input[type=signup] {
+    width: 100%;
+    background-color: #498d3c;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* add a color when hovering on sign up button */
+body input[type=signup]:hover {
+    background-color: rgb(103, 146, 94);
+}
+
+div.container {
+    border-radius: 5px;
+    background-color: #f8f8f7;
+    padding: 30px;
+}
+
+/* design of the footer specific to P5-P6 and P7-P12 */
+
+.p-footer {
+
+}

@@ -1,0 +1,243 @@
+<!-- SOEN287 EVE GAGNON, 40063888, P6 SIGN UP PAGE -->
+
+<!DOCTYPE html>
+<html>
+<style>
+    /* font */
+    body {
+        font-family: Arial;
+        flex-grow:1;
+		flex-basis:auto;	
+    }
+    div {
+        min-height:100%;
+    }
+    html, body {
+		display: flex;
+		flex-flow: column;
+		height:auto;
+		min-height:100%;
+		padding: 0;
+		margin: 0;}
+	h2 {
+		font: bold 30px Arial, sans-serif;
+		padding-left:30px;}				
+	table{
+		font: 25px Arial, sans-serif;}
+	a.items{
+		color: black;
+		font: 15px Arial, sans-serif}
+	a:link {
+		text-decoration:none;
+		color:black;}
+    ul.side-list {
+		text-align:left;
+		list-style-type:none;
+		margin-left:0;
+		padding:20px;
+		background-color:white;
+		border:solid;
+		border-width:5px;
+		border-color:#066535;}
+	div.background{
+		flex-grow:1;
+		flex-basis:auto;
+		position: relative;
+		min-height:100%;
+		height:100%;}
+
+	div.content{
+		position: relative;}
+	h1.name{
+		color: white;
+		font-size: 30pt;
+		padding-left: 10px;
+		margin-top: 0;
+		margin-bottom: 0;}
+    .description{
+		font-size: 13pt;}
+    .title {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: left;
+		background-color: #036635;}
+	.top{
+		color: white;
+		border: 10px;}
+	.whitebg{
+		background-color:white;}
+	.top-bd{
+		border-top:solid;
+		border-top-width:5px;
+		border-top-color:#066535;}
+	.bottom-bd{
+		border-bottom:solid;
+		border-bottom-width:5px;
+		border-bottom-color:#066535;}
+	.right-bd{
+		border-right:solid;
+		border-right-width:5px;
+		border-right-color:#066535;}
+	.left-bd{
+		border-left:solid;
+		border-left-width:5px;
+		border-left-color:#066535;}
+	.whole-bd{
+		border:solid;
+		border-width:5px;
+		border-color:#066535;}
+	.container{
+		position: relative;
+		text-align: center;}
+	.center-left{
+		position: absolute;
+		top: 20%;
+		padding-left: 15px;}
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../stylesheet.css" rel="stylesheet">
+    <link href="../../P3-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    </head>
+
+<body>
+    <header>
+
+        <div class="header-1">
+
+            <!-- facebook and instagram shortcut logos -->
+
+            <div class="follow">
+                <span> follow us on : </span>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+            <div class="contact">
+                <span> contact us : </span>
+                <a href="#"> +514-848-2424 </a>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+
+            <!-- main carrot logo and search bar -->
+
+            <a href="#" class="logo"> <i class="fas fa-carrot"></i> Concordia U. Green Market </a>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search product">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+
+        </div>
+
+        <div class="header-3">
+
+            <!-- menu bars -->
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#category">aisle</a>
+                <a href="#product">our product</a>
+                <a href="#deal">about us</a>
+                <a href="#contact">contact info</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div>
+
+        </div>
+    </header>
+<body>
+    <div class = "row" style = "overflow:hidden; white-space:nowrap;">
+        <h2>Prepared Meals<hr style = "display:inline-block; width: 100%;"/></h2>
+    </div>
+    <div>
+    <table align = "center" cellspacing = "0" cellpadding = "20" style = "margin-bottom:20px;">
+        <tr>
+            <th rowspan = 3 valign = "top">
+                <ul class = "side-list">
+                    <label><h3 style = "padding:0;margin:0;">Aisles<h3></label>
+                    <hr/>
+                    <li align = "left"><a href = "prepared-meals.html" style = "color:black;">Prepared Meals</a></li>
+                </ul>
+            </th>
+            <th class = "whitebg top-bd left-bd">
+                <a class = "items" href = "pasta.html">
+                <img src = "pasta.jpg" width = "200" height = "200"></br>
+                <h3>Pasta bowl</h3>
+                </a>
+                <hr/>
+                <p class = "description">$7.99 <br/></p>
+            </th>
+            <th class = "whitebg top-bd">
+                <a class = "items" href = "tuna-salad.html">
+                <img src = "tuna-salad.jpg" width = "200" height = "200"></br>
+                <h3>Tuna salad</h3>
+                </a>
+                <hr/>
+                <p class = "description">$5.50 <br/></p>
+            </th>
+            <th class = "whitebg top-bd right-bd">
+                <a class = "items" href = "soup.html">
+                <img src = "soup.jpg" width = "200" height = "200"></br>
+                <h3>squash soup</h3>
+                </a>
+                <hr/>
+                <p class = "description">$6.99 <br/></p>
+        </tr>
+        <tr class = "whitebg">
+            <th class = "whitebg left-bd bottom-bd">
+                <a class = "items" href = "tomato-salad.html">
+                <img src = "tomato-salad.jpg" width = "200" height = "200"></br>
+                <h3>Tomato salad</h3>
+                </a>
+                <hr/>
+                <p class = "description">$8.99<br/></p>
+            </th>
+            <th class = "bottom-bd">
+                <a class = "items" href = "salmon.html">
+                <img src = "salmon.jpg" width = "200" height = "200"></br>
+                <h3>Salmon in sauce</h3>
+                </a>
+                <hr/>
+                <p class = "description">$12.50<br/></p>
+            </th>
+            <th class = "bottom-bd right-bd">
+                <a class = "items" href = "fruit-platter.html">
+                <img src = "fruit-platter.jpg" width = "200" height = "200"></br>
+                <h3>Fruit platter</h3>
+                </a>
+                <hr/>
+                <p class = "description">$5.99<br/></p>
+            </th>
+        </tr>
+       
+    </table>
+    </div>
+    </div>
+    </div>
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="top-footer d-flex justify-content-center justify-content-lg-between border-bottom">
+                <span>&nbsp;</span>
+            </section>
+            <section class="info-footer d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <a>
+                    <p>Concordia University, SOEN 287 Project</p>
+                    <p>© Team Green, 2021</p>
+                </a>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

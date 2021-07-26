@@ -1,0 +1,232 @@
+<!-- SOEN287 JOON LEE, 40182249, P5 User Login -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+        <link href="../stylesheet.css" rel="stylesheet">
+		<link href="../P5_P6-style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		</head>
+
+<!-- body starts here -->
+
+<body>
+    
+<!-- header section starts here -->
+
+<header>
+
+    <!-- facebook and instagram shortcut logos -->
+
+    <div class="header-1">
+
+        <div class="follow">
+            <span> follow us on : </span>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="contact">
+            <span> contact us : </span>
+            <a href="#"> +514-848-2424 </a>
+        </div>
+
+    </div>
+
+    <!-- main carrot logo and search bar -->
+
+    <div class="header-2">
+
+        <a href="#" class="logo"> <i class="fas fa-carrot"></i> Concordia U. Green Market </a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search product">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <!-- menu bars -->
+
+    <div class="header-3">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">aisle</a>
+            <a href="#product">our product</a>
+            <a href="#contact">contact info</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </div>
+    
+</header>
+
+<br>
+
+<!-- Common header section ends here -->
+
+<!-- P5: Login section starts here -->
+
+<h3 class="heading">User Login page</h3>
+
+<br>
+<br>
+
+<!-- login box part -->
+
+<div class="login_box">
+
+    <h1> username/email </h1>
+    
+    <input type="username" name="username" value="username" 
+    onFocus="field_focus(this, 'username');" 
+    onblur="field_blur(this, 'username');" class="username" />
+
+    <br>
+    <br>
+      
+    <input type="password" name="username" value="username" 
+    onFocus="field_focus(this, 'username');" 
+    onblur="field_blur(this, 'username');" class="username" />
+
+    <br>
+    <br>
+
+    <!-- buttons -->
+      
+    <a href="#"><div class="btn">Submit</div></a> <!-- End Submit button -->
+
+    <a href="#"><div id="btn2">Forgot P.W</div></a> <!-- End forgot PW button -->
+    
+    <a href="#"><div id="btn3">Sign Up</div></a> <!-- End Sign up button -->
+      
+    </div> 
+    
+    <!-- End login Box -->
+      
+    </form>
+    
+    <br>
+    <br>
+    <br>
+
+    
+<!-- Login section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h3 class="heading">need help on logging in? contact us</h3>
+    
+    <div class="row">
+    
+        <form action="">
+    
+            <div class="inputBox">
+                <input type="text" required>
+                <label>your name</label>
+            </div>
+    
+            <div class="inputBox">
+                <input type="email" required>
+                <label>your email</label>
+            </div>
+    
+            <div class="inputBox">
+                <input type="number" required>
+                <label>phone number</label>
+            </div>
+    
+            <div class="inputBox">
+                <textarea required name="" id="" cols="30" rows="15"></textarea>
+                <label>message/request </label>
+            </div>
+    
+            <input type="submit" value="send message" class="btn">
+    
+        </form>
+    
+    </div>
+    
+    </section>
+
+    <br>
+    <br>
+    
+<!-- contact section ends -->
+    
+<!-- common footer section starts  -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>We are Concordia University's SOEN287 group named "Team Green".
+                This is our group project for Summer 2021.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>our location</h3>
+            <a href="#">Montreal, Canada</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">aisle</a>
+            <a href="#">product</a>
+            <a href="#">contact info</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us on</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> SOEN287 group </span> | all rights reserved! </h1>
+    
+</section>
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <p><a href="../P1/index.html">Home</a></p>
+            <p><a href="../about.html">About us</a></p>
+            <p><a href="../contact.html">Contact</a></p>
+        </div>
+
+        <div class="box">
+            <h3>Follow us:</h3>
+            <p><a href="https://facebook.com">Facebook</a></p>
+            <p><a href="https://instagram.com">Instagram</a></p>
+
+        </div>
+
+    </div>
+    <div>
+        <hr>
+        <footer class="copyright">
+                <p>Concordia University, SOEN 287 Project © Team Green, 2021
+        </footer>
+    </div>
+</section>
+
+</body>
+</html>

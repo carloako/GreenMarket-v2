@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link href="../stylesheet.css" rel="stylesheet">
+		<link href="../P5_P6-style.css" rel="stylesheet">
+		<link href="../P7_P12-style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">Green Market</a>
+			<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link active" href="../index.html">Home</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../aisle.html">Aisle</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../index.html">About</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../login.html">Log-in</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="../shoppingcart.html">Cart</a> </li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="search-btn btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<form class="order-list-form form-check">
+			<ol class="order-list list-group">
+				<div>
+					<label class="order-title-lbl">
+						<h2>Order list</h2>
+					</label>
+					<a href="../P12/edit_order.html">
+						<input type="button" class="order-btn btn btn-success" value="Add a new order" />
+					</a>
+				</div>
+				<li class="order list-group-item">
+					<div class="form-check">
+						<input class="form-check-input" name="orderRadios" type="radio" id="order-radio-1" value="order1">
+						<label class="order-lbl form-check-label" for="order-radio-1"> Order 1 </label>
+					</div>
+				</li>
+				<li class="order list-group-item">
+					<div class="form-check">
+						<input class="form-check-input" name="orderRadios" type="radio" id="order-radio-2" value="order2">
+						<label class="order-lbl form-check-label" for="order-radio-2"> Order 2 </label>
+					</div>
+				</li>
+				<li class="order list-group-item">
+					<div class="form-check">
+						<input class="form-check-input" name="orderRadios" type="radio" id="order-radio-3" value="order3">
+						<label class="order-lbl form-check-label" for="order-radio-3"> Order 3 </label>
+					</div>
+				</li>
+				<li class="order list-group-item">
+					<div class="form-check">
+						<input class="form-check-input" name="orderRadios" type="radio" id="order-radio-4" value="order4">
+						<label class="order-lbl form-check-label" for="order-radio-4"> Order 4 </label>
+					</div>
+				</li>
+				<li class="order list-group-item">
+					<div class="form-check">
+						<input class="form-check-input" name="orderRadios" type="radio" id="order-radio-5" value="order5">
+						<label class="order-lbl form-check-label" for="order-radio-5"> Order 5 </label>
+					</div>
+				</li>
+			</ol>
+			<a href="../P12/edit_order.html">
+				<input type="button" class="order-btn btn btn-secondary" value="Edit" />
+			</a>
+			<a href="#">
+				<input type="button" class="order-btn btn btn-danger" value="Delete" />
+			</a>
+		</form>
+	</div>
+
+	<div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="top-footer d-flex justify-content-center justify-content-lg-between border-bottom">
+                <span>&nbsp;</span>
+            </section>
+            <section class="info-footer d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <a>
+                    <p>Concordia University, SOEN 287 Project</p>
+                    <p>© Team Green, 2021</p>
+                </a>
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>
