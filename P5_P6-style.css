@@ -40,6 +40,11 @@ body input[type=text] {
     float: right;
     size: 80%;
 }
+.btn-outline-secondary:hover {
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+    border-color: #c5cfb6;
+}
 
 /* Sign up button style*/
 body input[type=signup] {

@@ -186,7 +186,7 @@ a {
     text-align: center;
     color: #f6f8f2;
     overflow:-moz-hidden-unscrollable;
-    
+    padding-left: 1%;
 }
 #menu-item {
     width: 115px;
@@ -198,15 +198,20 @@ a {
 }
 .navbar-right {
    float: right;
+   display: inline-block;
 }
 #shopping-cart {
     color: #f6f8f2;
 }
-#shopping-cart a:hover {
+.fas:hover {
     color: #c8d1bb;
 }
-#user {
-
+.user-login {
+    color: #f6f8f2;
+    
+}
+.user-login:visited {
+    color: #f6f8f2;
 }
 .navbar a:visited {
     color: #f6f8f2;
