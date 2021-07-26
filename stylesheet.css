@@ -63,12 +63,15 @@ footer, header, hgroup, menu, nav, section {
 }
 header {
     background-color: #b3c39c;
+    border-color:#b3c39c;
 }
+
 body {
     background-color: #f6f8f2;
     color: #343434;
-    font-family: MontserratLight;
+    font-family: MontserratLight, Helvetica, Arial, sans-serif;;
 	line-height: 1;
+    border-color:#b3c39c;
 }
 body a:link {
     color: #b3c39c;
@@ -81,6 +84,7 @@ body a:hover {
 }
 footer {
     background-color: #f6f8f2;
+    border-color:#b3c39c;
 }
 ol, ul {
 	list-style: none;
@@ -137,27 +141,22 @@ a {
 .header-1 a:visited {
     color: #f6f8f2;
 }
+.fa:hover {
+    color: #c5cfb6;
+}
 .header-2 {
     width: 100%;
-    height: 160px;
+    height: 25%;
     font-size: 100%;
     font-family: MontserratLight;
     color: #f6f8f2;
     padding-left: 5%;
+    padding-right: 5%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#title {
+#market-name {
     width: 100%;
-    font-size: 300%;
-    font-family: MontserratBold;
-    color: #f6f8f2;
-}
-#title a:hover {
-    color:#fafcf7;
-}
-#title a:visited {
-    color: #f6f8f2;
 }
 .search-bar-container {
     float: right;
@@ -165,11 +164,9 @@ a {
     padding-right: 1%;
     padding-left: 5%;
 }
-#search-btn {
-    color: #f6f8f2;
-}
-#search-btn a:hover {
-    color:#fafcf7;
+.searching-container {
+    padding-right: 0.5%;
+    width: 100%;
 }
 
 
@@ -177,7 +174,7 @@ a {
 /* navigation bar styling */
 .nav {
     width: 100%;
-    height: 30px;
+    height: 35px;
     background-color: #a0b284;
     color: #f6f8f2;
 }
@@ -185,38 +182,44 @@ a {
     height: 100%;
     display: inline-block;
     font-family: MontserratLight;
+    vertical-align: bottom;
+    text-align: center;
+    color: #f6f8f2;
+    overflow:-moz-hidden-unscrollable;
+    
 }
-active {
-
+#menu-item {
+    width: 115px;
+    text-align: left;
+    padding-left: 10px;
+}
+#menu-item a:hover {
+    color: #c8d1bb;
 }
 .navbar-right {
-    float: right;
+   float: right;
 }
-.navbar a:link {
+#shopping-cart {
     color: #f6f8f2;
 }
-.navbar a:hover {
-    background-color: #b3c39c;
+#shopping-cart a:hover {
+    color: #c8d1bb;
+}
+#user {
+
 }
 .navbar a:visited {
     color: #f6f8f2;
 }
-.icons {
-    vertical-align: middle;
-    text-align: right;
-    padding-right: 2%;
-}
 #shopping-cart {
     padding-right: 1%;
-}
-.search-box{
-    float:right;
-    text-align: center;
+    padding-left: 1%;
 }
 .dropbtn {
     vertical-align: top;
     background-color: #a0b284;
     color: #f6f8f2;
+    padding-right: 70px;
     border: none;
     border-right: 2px;
     border-right-color: #f6f8f2;
@@ -225,15 +228,18 @@ active {
 .dropdown-content {
     display: none;
     position: absolute;
+    text-align: center;
     background-color: #f6f8f2;
     color: #a0b284;
     min-width: none;
+    max-width: 110px;
     box-shadow: 0px 3px 10px 0px #777777;
     z-index: 1;
 }
 .dropdown-content a:link {
     color: #b3c39c;
-    padding: 12px 16px;
+    text-align: center;
+    padding: 7px;
     display: block;
 }
 .dropdown-content a:visited {
@@ -269,19 +275,17 @@ active {
     height: 75px;
 }
 
+.footer a:visited {
+    color: #b3c39c;
+}
+
 #title-footer {
     font-size: 90%;
     padding-bottom: 1px;
     color: #343434;
 }
-
-hr {
-    width: 75%;
-    background: #e8e9e6;
-}
-
 .copyright {
-    color: #d3d8cb;
+    color: #cbd6b9;
     font-size: 87%;
     text-align: center;
     padding-bottom: 15px;

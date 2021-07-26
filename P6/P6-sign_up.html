@@ -34,22 +34,23 @@
       <div class="header-1">
         <!-- facebook and instagram shortcut logos -->
         <div class="follow">
-          <a href="#" class="fab fa-facebook" style="font-size: 24px" id="facebook"></a>
-          <a href="#" class="fab fa-instagram" style="font-size: 24px" id="instagram"></a>
+          <a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
+          <a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
         </div>
       </div>
 
       <div class="header-2">
         <!-- main carrot logo and search bar -->
 
-        <a href="../P1/index.html" class="logo" id="title">
-          <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
+        <a href="../P1/index.html" class="logo">
+          <i class="fas fa-carrot" id="favicon"></i><img src="../green_market-logo.png" id="market-name">
         </a>
-        
+        <div class="searching-container">
         <form action="" class="search-bar-container">
           <input type="search" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search" id="search-btn"></label></a>
+          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
         </form>
+      </div>
       </div>
 
       <div class="nav">
@@ -57,38 +58,55 @@
 
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
-              <ul class="nav navbar-nav">
-            <li class="active"><a href="../P1/index.html">Home</a></li>
-            <li class="active" id="dropdown">
-              <button class="dropbtn" id="aisle">Aisle</button>
-              <div class="dropdown-content">
-                <a href="../P2-P3/john/fruits.html">Fruits</a>
-                <a href="../P2-P3/joon/vegetables/vegetables.html"
-                  >Vegetables</a
-                >
-                <a href="../P2-P3/joon/meats/meats.html">Meats</a>
-                <a href="../P2-P3/joon/milk_eggs/milk_eggs.html">Milk & Eggs</a>
-                <a href="../P2-P3/ulas/snacks-aisle.html">Snacks</a>
-                <a href="../P2-P3/francis/beverages.html">Beverages</a>
-                <a href="../P2-P3/eve/prepared-meals.html">Prepared meals</a>
-              </div>
-            </li>
-            <li class="active"><a href="#">Deals</a></li>
-                <li class="active"><a href="#">Services</a></li>
+            <ul class="nav navbar-nav">
+              <li class="active col-sm-auto" id="menu-item"><a href="../P1/index.html">Home</a></li><br/>
+              <li class="active col-sm-auto" id="dropdown">
+                <button class="dropbtn" id="aisle">Aisle</button>
+                <div class="dropdown-content">
+                  <a href="../P2-P3/john/fruits.html">Fruits</a>
+                  <a href="../P2-P3/joon/vegetables/vegetables.html"
+                    >Vegetables</a
+                  >
+                  <a href="../P2-P3/joon/meats/meats.html">Meats</a>
+                  <a href="../P2-P3/joon/milk_eggs/milk_eggs.html"
+                    >Milk & Eggs</a
+                  >
+                  <a href="../P2-P3/ulas/snacks-aisle.html">Snacks</a>
+                  <a href="../P2-P3/francis/beverages.html">Beverages</a>
+                  <a href="../P2-P3/eve/prepared-meals.html">Prepared meals</a>
+                </div>
+              </li><br/>
+              <li class="active col-sm-auto" id="menu-item"><a href="#">Deals</a></li><br/>
+              <li class="active col-sm-auto" id="menu-item"><a href="#">Services</a></li><br/>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="fas fa-shopping-cart" id="shopping-cart"></a></li>
-                <li><a href="../P5/P5-login.html" class="fas fa-user" id="user">Sign up</a></li>
-                </ul>
-        </div>
+              <li>
+                <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
+              </li>
+              <li>
+                <a href="../P5/P5-login.html" class="fas fa-user" id="user"
+                  >Sign up</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
+<p><br/></p>
+<p><br/></p>
+
+<h2>Sign up</h2>
     <form action="action_page.php" style="border: 1px">
-      <h1>Sign up</h1>
       <div class="container">
-        <h4>Account information</h4>
+        <input
+          class="btn btn-outline-secondary btn-small"
+          type="reset"
+          value="Reset"
+        />
+
+        <h3>Account information</h3>
+        <p><br/></p>
         <label for="e-mail"><b>E-mail</b></label>
         <input
           type="text"
@@ -116,7 +134,8 @@
           required
         />
         <hr />
-        <h4>Delivery Information</h4>
+        <h3>Delivery Information</h3>
+        <p><br/></p>
         <label for="first-name"><b>First name</b></label>
         <input
           type="text"
@@ -161,20 +180,29 @@
           id="Postal-code"
           required
         />
-
-        <input type="reset" />
+        <p><br /></p>
 
         <p>
+          <br />
           By creating an account you agree to our
           <a href="#">Terms & Privacy</a>.
         </p>
+        <br />
         <input type="signup" value="Sign up" />
       </div>
 
       <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
+        <p>
+          Already have an account?
+          <a href="../P5/P5-login.html" id="signin">Sign in</a>.
+        </p>
       </div>
     </form>
+
+    <p><br/></p>
+    <p><br/></p>
+    <p><br/></p>
+    <p><br/></p>
 
     <section class="footer">
       <div class="box-container">
