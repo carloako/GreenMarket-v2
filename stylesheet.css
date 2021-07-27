@@ -65,7 +65,6 @@ header {
     background-color: #b3c39c;
     border-color:#b3c39c;
 }
-
 body {
     background-color: #f6f8f2;
     color: #343434;
@@ -81,6 +80,9 @@ body a:visited {
 }
 body a:hover {
     color: #cbd6b9;
+}
+.fa, .far, .fas {
+    font-family: Font Awesome\ 5 Free, MontserratLight;
 }
 footer {
     background-color: #f6f8f2;
@@ -141,7 +143,7 @@ a {
 .header-1 a:visited {
     color: #f6f8f2;
 }
-.fa:hover {
+.fab:hover {
     color: #c5cfb6;
 }
 .header-2 {
@@ -193,6 +195,9 @@ a {
     text-align: left;
     padding-left: 10px;
 }
+#menu-item a:link{
+    color: #f6f8f2;
+}
 #menu-item a:hover {
     color: #c8d1bb;
 }
@@ -200,21 +205,27 @@ a {
    float: right;
    display: inline-block;
 }
+
 #shopping-cart {
     color: #f6f8f2;
 }
-.fas:hover {
+#shopping-cart:hover {
     color: #c8d1bb;
+}
+#shopping-cart:visited {
+    color: #f6f8f2;
 }
 .user-login {
     color: #f6f8f2;
-    
 }
 .user-login:visited {
     color: #f6f8f2;
 }
 .navbar a:visited {
     color: #f6f8f2;
+}
+.navbar a:hover {
+    color: #c8d1bb;
 }
 #shopping-cart {
     padding-right: 1%;

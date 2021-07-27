@@ -62,7 +62,7 @@
               <li class="active col-sm-auto" id="menu-item"><a href="../P1/index.html">Home</a></li><br/>
               <li class="active col-sm-auto" id="dropdown">
                 <button class="dropbtn" id="aisle">Aisle</button>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="pages-nav">
                   <a href="../P2-P3/john/fruits.html">Fruits</a>
                   <a href="../P2-P3/joon/vegetables/vegetables.html"
                     >Vegetables</a
@@ -79,13 +79,15 @@
               <li class="active col-sm-auto" id="menu-item"><a href="#">Deals</a></li><br/>
               <li class="active col-sm-auto" id="menu-item"><a href="#">Services</a></li><br/>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="cart-user">
               <li>
-                <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
+                <div class="shopping-cart">
+                  <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
+                  </div>
               </li>
               <li>
-                <div class="user-login"><a href="../P5/P5-login.html" class="fas fa-user"
-                  ></a><a href=".../P5/P5-login.html">Sign up</a>
+                <div class="user-login">
+                  <a href="../P5/P5-login.html" class="fas fa-user"> Sign up</a>
                 </div>
               </li>
             </ul>
@@ -189,7 +191,7 @@
           <a href="#">Terms & Privacy</a>.
         </p>
         <br />
-        <input type="signup" value="Sign up" />
+        <input type="signup" onclick="location.href='P6-landing_page.html'" value="Sign up"/>
       </div>
 
       <div class="container signin">
@@ -200,8 +202,6 @@
       </div>
     </form>
 
-    <p><br/></p>
-    <p><br/></p>
     <p><br/></p>
     <p><br/></p>
 
@@ -220,6 +220,7 @@
           <p><a href="https://instagram.com">Instagram</a></p>
         </div>
       </div>
+    
       <div>
         <footer class="copyright">
           <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
