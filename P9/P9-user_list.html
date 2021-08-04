@@ -24,7 +24,9 @@
     />
     <!-- Custom Stylesheets -->
     <link href="../stylesheet.css" rel="stylesheet" />
-    <link href="../P5_P6-style.css" rel="stylesheet" />
+    <link href="../P7_P12-style.css" rel="stylesheet" />
+    <link href="../P9-style.css" rel="stylesheet"/>
+    
   </head>
 
   <body>
@@ -90,74 +92,19 @@
         </nav>
       </div>
     </header>
-
-<p><br/></p>
-<p><br/></p>
-		<div class = "background">
-			<div class = "content">
-				<div class = "">
-					<div>
-						<ul class = "nav">
-							<li class = "left nav"> <a href = "../index.html"> Home </a>
-							<li class = "nav left"> <a href = "aisle.html"> Aisle </a>
-							<li class = "nav left"> <a href = "../index.html"> About </a>
-							<li class = "nav right"> <a href = "../shoppingcart.html"> Cart </a>
-							<li class = "nav right"> <a href = "../login.html"> Log-in </a>
-							<li class = "search-box"> 
-								<form action = "" class = "search-box-form"><p>
-									<label style = "color:white;font-size:15pt;">
-										Search an item: 
-											<input type = "text" name = "item" size = "30"/>
-										</label>
-									</p>
-								</form>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div>
-					<table class = "whitebg whole-bd" style = "margin:auto;margin-bottom:20px;margin-top:20px;height:100%;width:85%;text-align:left;">
-						<tr>
-							<th rowspan = 3 style = "background-color:#5fd299;">
-							</th>
-							<th>
-								<h3>User List:</h3>
-							</th>
-						</tr>
-						<tr>
-							<th>
-								<p style = "font-weight:normal;">Users.</p>
-							</th>
-						</tr>
-						<tr>
-							<th>
-								<ul style = "list-style-type:none;padding:0;">
-									<li style = "float:left;padding:5px;">
-										<form action = "p10.html" method = "post">
-											<input type = "submit" name = "add" value = "Add">
-										</form>
-									</li>
-									<li style = "float:left;padding:5px;">
-										<form action = "" method = "">
-											<input type = "submit" name = "delete" value = "Delete">
-										</form>
-									</li>
-									<li style = "float:left;padding:5px;">
-										<form action = "p10.html" method = "">
-											<input type = "submit" name = "edit" value = "Edit">
-										</form>
-									</li>
-								</ul>
-							</th>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	
+    <section class = "midsection">
+      <div class = "backpage-box">
+        <p>User list:</p>
+        <p id = "user-list">
+        </p>
+        <button id = "P9-add-button" type = button>Add</button>
+      </div>
+    </section>
+    <script type = "text/javascript" src = "P9-js.js"></script>
+		
 <!-- common footer section starts  -->
 
-<section class="footer">
+  <section class="footer">
     <div class="box-container">
       <div class="box">
         <p id="title-footer">Quick links</p>
