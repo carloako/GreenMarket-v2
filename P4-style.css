@@ -1,1 +1,57 @@
 /* This page is to style the shopping cart page body. */
+html{
+    height: 100%;
+    min-height:100%;
+}
+body{
+    min-height: 100%;
+    height:100%;
+}
+.box-sc {
+    height: auto;
+    margin: 1%;
+    overflow: auto;
+    width: 200px;
+}
+.overviewprice {
+    padding: 1%;
+    width: 100%;
+    border: solid;
+}
+#totalwotax {
+}
+.box-container-sc {
+    width: 90%;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.overviewprice-box {
+    margin: 1%;
+    width: 90%;
+}
+#product {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media only screen and (min-width:766px){
+.box-container-sc {
+    width: 70%;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.overviewprice-box {
+    margin: 1%;
+    width: 20%;
+}
+#product {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}}

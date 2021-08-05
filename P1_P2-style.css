@@ -1,1 +1,33 @@
-/* This page is to address the body design of P1-P2
+/* This page is to address the body design of P1-P2 */
+.center-table-container {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items{
+    width: 100%;
+    overflow: auto;
+}
+.center-table-items {
+    width: 300px;
+}
+.item-images {
+    display: block;
+    margin: auto;
+}
+.item-name {
+    text-align: center;
+}
+.sale {
+    text-align: center;
+}
+.description {
+    text-align: center;
+}
+.before-price {
+    text-decoration: line-through;
+}
+.sale {
+    color: red;
+}
