@@ -72,9 +72,6 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="../fruits.html">Fruits</a></li>
-                    <li><a class="dropdown-item" href="../../joon/vegetables/vegetables.html">Vegetables</a></li>
-                    <li><a class="dropdown-item" href="../../joon/meats/meats.html">Meats</a></li>
-                    <li><a class="dropdown-item" href="../../joon/milk_eggs/milk_eggs.html">Milk & Eggs</a></li>
                     <li><a class="dropdown-item" href="../../ulas/snacks-aisle.html">Snacks</a></li>
                     <li><a class="dropdown-item" href="../../francis/beverages.html">Beverages</a></li>
                     <li><a class="dropdown-item" href="../../eve/prepared-meals.html">Prepared meals</a></li>
@@ -96,10 +93,13 @@
     </header>
 		<div class = "background">
 			<div class = "content">
+        <div style = "overflow:hidden; white-space:nowrap;margin:1%">
+          <h2 class = "product-title">Fruits <hr style = "display:inline-block; width: 100%;"/></h2>
+        </div>
 				<div class = "row grid-container whitebg whole-bd">
 					<div class = "item1">
 						<img src = "../fruits_images/raspberries.jpg" width = "200" height = "300"></br>
-						<h3>Raspberries</h3>
+						<h3 class = "product-name">Raspberries</h3>
 						<hr style = "width:200px;" align = "left"/>
 						<p class = "description">$3.50/piece <br/> $0.65/100g</p>	
 					</div>
@@ -110,9 +110,9 @@
 					</div>
 					<div class = "item3">
 						<form action = "">
-							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
+							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10" size = "5"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
 						</form>
-            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" readonly>
+            <label for = "subtotal">Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "text" id = "subtotal" name = "subtotal" size = "5" readonly>
 					</div>
 				</div>
 			</div>
