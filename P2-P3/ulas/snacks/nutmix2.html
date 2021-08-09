@@ -100,8 +100,8 @@
 					<div class = "item1">
 						<img src = "../snacks_images/nutmix2.jpg" width = "200" height = "200"></br>
 						<h3>GO! Nuts</h3>
-						<hr style = "width:200px;" align = "left"/>
-						<p class = "description">$8</p>	
+						<hr style = "width:250px;margin:0;"/>
+						<p class = "description">$8 <br/> $2.5/100g</p>
 					</div>
 					<div class = "item2">
 						<h3>Product Description</h3>
@@ -112,9 +112,10 @@
 					</div>
 					<div class = "item3">
 						<form action = "">
-							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
+							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10"/> <br> 
+              <label for = "subtotal">Total: &nbsp;</label><input type = "text" id = "subtotal" name = "subtotal" readonly>
+              <input class="btn btn-primary" type = "submit" value = "Add to Cart"/>
 						</form>
-            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" readonly>
 					</div>
 				</div>
 			</div>
@@ -151,7 +152,7 @@
   ></script>
   <script>
     function subtotalCalc(){
-      var x = 1 * document.getElementById("quantity").value;
+      var x = 8 * document.getElementById("quantity").value;
       document.getElementById("subtotal").value = "$" + x;
     }
     function readMore(){
