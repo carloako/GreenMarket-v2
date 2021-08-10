@@ -72,6 +72,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="../../john/fruits.html">Fruits</a></li>
+ 
                     <li><a class="dropdown-item" href="../snacks-aisle.html">Snacks</a></li>
                     <li><a class="dropdown-item" href="../../francis/beverages.html">Beverages</a></li>
                     <li><a class="dropdown-item" href="../../eve/prepared-meals.html">Prepared meals</a></li>
@@ -93,53 +94,54 @@
     </header>
 		<div class = "background">
 			<div class = "content">
-        <div style = "overflow:hidden; white-space:nowrap;margin:1%">
-          <h2 class = "product-title">Snacks <hr style = "display:inline-block; width: 100%;"/></h2>
-        </div>
 				<div class = "row grid-container whitebg whole-bd">
 					<div class = "item1">
 						<img src = "../snacks_images/chickpeas.jpg" width = "200" height = "200"></br>
-						<h3 class = "product-name">Chickpeas</h3>
-						<hr style = "width:200px;" align = "left"/>
-						<p class = "description">$1</p>	
+						<h3>Chickpeas</h3>
+						<hr style = "width:250px;margin:0;"/>
+						<p class = "description">$4 <br/> $0.68/100g</p>
 					</div>
 					<div class = "item2">
 						<h3>Product Description</h3>
-						<p id = "description"><span id = "dots">...</span><span id = "more"></span></p>
-            <button type = "button" onclick= "readMore();" id = "readmore">More Description</button>
+						<p id = "description"><span id = "dots">Salted Roasted Chickpea Snacks...</span><span id = "more">
+              Salted Roasted Chickpea Snacks. Loaded with protein, fiber and folate. Healthy and delicious. Natural and organic.
+            </span> </p>
+            <button type = "button" onclick= "readMore();" class="btn btn-secondary" id = "readmore">More Description</button>
 					</div>
 					<div class = "item3">
 						<form action = "">
-							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10" size = "5"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
+							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10"/> &nbsp; &nbsp; <input class="btn btn-primary" type = "submit" value = "Add to Cart"/>
 						</form>
-            <label for = "subtotal">Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "text" id = "subtotal" name = "subtotal" size = "5"readonly>
+            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" readonly>
 					</div>
 				</div>
 			</div>
 		</div>
 <!-- common footer section starts  -->
-
 <section class="footer">
-    <div class="box-container">
-      <div class="box">
-        <p id="title-footer">Quick links</p>
-        <p><a href="../../index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
-      </div>
+  <p><br/><br/></p>
+  <hr class="solid">
+  <div class="box-container">
+    <div class="box">
+      <p id="title-footer">Quick links</p>
+      <p><a href="../P1/index.html">Home</a></p>
+      <p><a href="../about.html">About us</a></p>
+      <p><a href="../contact.html">Contact</a></p>
+    </div>
 
-      <div class="box">
-        <p id="title-footer">Follow us:</p>
-        <p><a href="https://facebook.com">Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-      </div>
+    <div class="box">
+      <p id="title-footer">Follow us:</p>
+      <p><a href="https://facebook.com">Facebook</a></p>
+      <p><a href="https://instagram.com">Instagram</a></p>
     </div>
-    <div>
-        <p><br/></p>
-      <footer class="copyright">
-        <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
-      </footer>
-    </div>
+  </div>
+
+  <div>
+    <footer class="copyright">
+      <p><br/>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+    </footer>
+  </div>
+</section>
   </section>
   <!-- Install JavaScrip plugins and Popper -->
   <script
@@ -149,7 +151,7 @@
   ></script>
   <script>
     function subtotalCalc(){
-      var x = 1 * document.getElementById("quantity").value;
+      var x = 4 * document.getElementById("quantity").value;
       document.getElementById("subtotal").value = "$" + x;
     }
     function readMore(){

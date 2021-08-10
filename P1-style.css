@@ -1,0 +1,48 @@
+/* this page styles the homepage */
+
+
+
+/* image + start button */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    padding-top: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+}
+
+.home .image img {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home .content h2 {
+    font-size: 5rem;
+}
+
+.btn {
+    color: #b3c39c;
+    border-color: #b3c39c;
+    size: 80%;
+    font-size: 2.5rem;
+}
+.btn:hover {
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+    border-color: #c5cfb6;
+}
+
+
+

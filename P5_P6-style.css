@@ -4,8 +4,15 @@ This template doesn't address the theme colors, but works to define the design o
 this group of pages. */
 
 /* design of the header specific to P5-P6 and P7-P12 */
-.p-header {
-
+.header-2 {
+    height: 0.05%;
+}
+#market-name {
+    height: auto;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* design of the body */
@@ -76,6 +83,8 @@ div.container {
 
 /* design of the footer specific to P5-P6 and P7-P12 */
 
-.p-footer {
-
-}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
