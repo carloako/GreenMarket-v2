@@ -21,7 +21,7 @@ table {
 
 table tr {
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #cbd6b9;
   padding: .35em;
 }
 
@@ -40,6 +40,76 @@ table caption {
   font-size: 32px;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.edit-btn {
+  color: #b3c39c;
+  border-color: #b3c39c;
+  background-color:#f6f8f2;
+}
+.edit-btn:hover {
+  color: #f6f8f2;
+  background-color: #c5cfb6;
+  border-color: #c5cfb6;
+}
+.edit-btn:visited {
+  color: #f6f8f2;
+  background-color: #c5cfb6;
+  border-color: #c5cfb6;
+}
+.payment-dropdown {
+  color: #b3c39c;
+  border-color: #b3c39c;
+  background-color:#f6f8f2;
+}
+.payment-dropdown-item a {
+  color: #b3c39c;
+  border-color: #b3c39c;
+  background-color:#f6f8f2;
+}
+
+.btn-primary {
+  color: #b3c39c;
+  border-color: #b3c39c;
+  background-color:#f6f8f2;
+  size: 80%;
+}
+.btn-primary:hover {
+  color: #f6f8f2;
+  background-color: #c5cfb6;
+  border-color: #c5cfb6;
+}
+
+/* sidebar navigation */
+.sidenav {
+  height: 90%;
+  width: 160px;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 235px;
+  border-right: 2px;
+}
+/* sidebar menu links */
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  font-size: 21px;
+  color: #f6f8f2;
+  display: block;
+}
+.sidenav-item:hover{
+  color: #f6f8f2;
+  background-color: #c5cfb6;
+}
+
+
+
+/* main styling */
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,5 +1,3 @@
-<!-- SOEN287 EVE GAGNON, 40063888, P6 SIGN UP PAGE -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,12 +5,14 @@
     <meta
       charset="utf-8"
       name="viewport"
-      content="width = device-width, initial-scale = 1"
+      content="width = device-width, initial-scale = 1.0"
     />
+	<!-- Swiper CDN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+	<!-- font awesome CDN -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -26,72 +26,67 @@
     />
     <!-- Custom Stylesheets -->
     <link href="../../stylesheet.css" rel="stylesheet" />
-    <link href="../../P3-style-aisle.css" rel="stylesheet" />
+    <link href="../../P3-style-aisle.css" rel="stylesheet"/>
+
+	<!-- JS file -->
+	<script type="text/javascript" src="../../home.js"></script>
   </head>
 
   <body>
+	<div id="page-container">
+		<div id="content-wrap">
     <header>
+
       <div class="header-1">
-        <!-- facebook and instagram shortcut logos -->
-        <div class="follow">
-          <a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
-          <a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
-        </div>
+		<a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
+		<a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
       </div>
 
-      <div class="header-2">
-        <!-- main carrot logo and search bar -->
-
-        <a href="../P1/index.html" class="logo">
-          <i class="fas fa-carrot" id="favicon"></i><img src="../../green_market-logo.png" id="market-name">
-        </a>
-        <div class="searching-container">
-        <form action="" class="search-bar-container">
-          <input type="search" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
-        </form>
-      </div>
-      </div>
-
-      <div class="nav">
-        <!-- menu bars -->
-
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <ul class="nav navbar-nav">
-              <li class="active col-sm-auto" id="menu-item"><a href="../P1/index.html">Home</a></li><br/>
-              <li class="active col-sm-auto" id="dropdown">
-                <button class="dropbtn" id="aisle">Aisle</button>
-                <div class="dropdown-content">
-                  <a href="../P2-P3/john/fruits.html">Fruits</a>
-                  <a href="../P2-P3/joon/vegetables/vegetables.html"
-                    >Vegetables</a
-                  >
-                  <a href="../P2-P3/joon/meats/meats.html">Meats</a>
-                  <a href="../P2-P3/joon/milk_eggs/milk_eggs.html"
-                    >Milk & Eggs</a
-                  >
-                  <a href="../P2-P3/ulas/snacks-aisle.html">Snacks</a>
-                  <a href="../P2-P3/francis/beverages.html">Beverages</a>
-                  <a href="../P2-P3/eve/prepared-meals.html">Prepared meals</a>
-                </div>
-              </li><br/>
-              <li class="active col-sm-auto" id="menu-item"><a href="#">Deals</a></li><br/>
-              <li class="active col-sm-auto" id="menu-item"><a href="#">Services</a></li><br/>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
-              </li>
-              <li>
-                <div class="user-login"><a href="../P5/P5-login.html" class="fas fa-user"
-                  ></a><a href=".../P5/P5-login.html">Sign up</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+	  <div class="header-2">
+		  <a href="../../index.html" class="logo"><img src="../../green_market-logo.png" id="market-name"></a>
+		<div class="searching-container">
+			<form action class="search-bar-container">
+				<input type="search" id="search-bar" placeholder="Search product">
+				<a href="#" class="fas fa-search">
+				</a>
+			</form>
+		</div>
+	  </div>
+	  <!-- menu bars -->
+	  <div class="nav" id="nav-theme">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../../P2-P3/aisles.html">Aisles</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Deals</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+					</ul>
+					<div class="user-shopping">
+					<span id="shopping-cart">
+						<a href="../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+					</span>
+					<span id="user-login">
+						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
+					</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+	  </div>
     </header>
 
 <p><br/></p>

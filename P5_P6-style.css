@@ -20,15 +20,6 @@ body {
     font-family: Montserrat;
 }
 
-.page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-.content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-
 h2 {
     padding-left: 9%;
     font-variant-caps: all-small-caps;
