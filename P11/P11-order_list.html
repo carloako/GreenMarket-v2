@@ -36,10 +36,59 @@
         <!-- main logo and search bar -->
         <a href="../P1/index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
         </a>
+<<<<<<< HEAD
+=======
+
+        <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search product" />
+          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
+        </form>
+      </div>
+
+      <div class="nav">
+        <!-- menu bars -->
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../P1/index.html">Home</a></li>
+              <li class="active" id="dropdown">
+                <button class="dropbtn" id="aisle">Aisle</button>
+                <div class="dropdown-content">
+                  <a href="../P2-P3/john/fruits.html">Fruits</a>
+ 
+                  <a href="../P2-P3/ulas/snacks-aisle.html">Snacks</a>
+                  <a href="../P2-P3/francis/beverages.html">Beverages</a>
+                  <a href="../P2-P3/eve/prepared-meals.html">Prepared meals</a>
+                </div>
+              </li>
+              <li class="active"><a href="#">Deals</a></li>
+              <li class="active"><a href="#">Services</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
+              </li>
+              <li>
+                <a href="../P5/P5-login.html" class="fas fa-user" id="user"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+>>>>>>> main
       </div>
     </header>
 <p><br/></p>
 <p><br/></p>
+<<<<<<< HEAD
+=======
+<div id="success-alert" class="alert alert-success" style="display:none;" role="alert">
+  Successfully deleted order.
+</div>
+<div>
+>>>>>>> main
 
 <!--sidebar-->
 <div class="sidenav">
@@ -68,20 +117,36 @@
         <td data-label="Order #">12345</td>
         <td data-label="User">john.shopper@gmail.com</td>
         <td data-label="Action"><a href="../P12/P12-edit_order.html">Edit</a></td>
-        <td data-label="Delete"><a href=""><img class="delete-icon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png" alt="delete-icon"></a></td>
+        <td data-label="Delete"><a onclick="toggleConfirmation()"><img class="delete-icon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png" alt="delete-icon"></a></td>
       </tr>
 
       <tr>
         <td data-label="Order #">67889</td>
         <td data-label="User">jane.shopper@gmail.com</td>
         <td data-label="Action"><a href="../P12/P12-edit_order.html">Edit</a></td>
-        <td data-label="Delete"><a href=""><img class="delete-icon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png" alt="delete-icon"></a></td>
+        <td data-label="Delete"><a onclick="toggleConfirmation()"><img class="delete-icon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png" alt="delete-icon"></a></td>
       </tr>
 
     </tbody>
   </table>
+  <div id="delete-order-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Delete Order</h5>
+          <button id="close-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete this order?</p>
+        </div>
+        <div class="modal-footer">
+          <button id="cancel-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button id="confirm-button" type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </table>
   <br>
   <form action="../P12/P12-edit_order.html" style="margin-left:10%;"> <input class="btn btn-primary" type="submit" value="Add a new order" />
   </form>
@@ -94,6 +159,7 @@
           <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
         </footer>
       </div>
+<<<<<<< HEAD
     </section>
     <!-- Install JavaScrip plugins and Popper -->
     <script
@@ -102,4 +168,28 @@
       crossorigin="anonymous"
     ></script>
   </body>
+=======
+
+      <div class="box">
+        <p id="title-footer">Follow us:</p>
+        <p><a href="https://facebook.com">Facebook</a></p>
+        <p><a href="https://instagram.com">Instagram</a></p>
+      </div>
+    </div>
+    <div>
+        <p><br/></p>
+      <footer class="copyright">
+        <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+      </footer>
+    </div>
+  </section>
+  <!-- Install JavaScrip plugins and Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="P11-order_list.js"></script>
+</body>
+>>>>>>> main
 </html>
