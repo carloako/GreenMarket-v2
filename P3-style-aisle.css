@@ -1,1 +1,37 @@
 /* This page deals with the "aisles" page design */
+
+/* box */
+.aisle-box {
+    background-color: white;
+    border:solid;
+    border-color: #a0b284;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* individual box items */
+.aisle-box-items {
+    padding: 1%;
+    text-align: center;
+}
+/* aisle title */
+.aisle-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+/* product names in links */
+.aisle-box-items-contents a:link,.aisle-box-items-contents a:visited,.aisle-box-items-contents a:visited:hover{
+    color: black;
+}
+/* product name */
+.aisle-box-items-contents h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 501;
+}
+/* prices */
+.description {
+    font-size: 14px;
+}

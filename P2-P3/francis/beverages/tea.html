@@ -23,8 +23,8 @@
       crossorigin="anonymous"
     />
     <!-- Custom Stylesheets -->
-    <link href="../stylesheet.css" rel="stylesheet" />
-    <link href="../P5_P6-style.css" rel="stylesheet" />
+    <link href="../../../stylesheet.css" rel="stylesheet" />
+    <link href="../../../P3-description-style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -39,8 +39,10 @@
 
       <div class="header-2">
         <!-- main carrot logo and search bar -->
-
-        <a href="../P1/index.html" class="logo" id="title">
+        <a href="../../../index.html" class="logo">
+          <i class="fas fa-carrot" id="favicon"></i><img src="../../../green_market-logo.png" id="market-name">
+        </a>
+        <a href="../../../index.html" class="logo" id="title">
           <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
         </a>
 
@@ -53,102 +55,109 @@
       <div class="nav">
         <!-- menu bars -->
 
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-light ">
           <div class="container-fluid">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="../P1/index.html">Home</a></li>
-              <li class="active" id="dropdown">
-                <button class="dropbtn" id="aisle">Aisle</button>
-                <div class="dropdown-content">
-                  <a href="../P2-P3/john/fruits.html">Fruits</a>
-                  <a href="../P2-P3/joon/vegetables/vegetables.html"
-                    >Vegetables</a
-                  >
-                  <a href="../P2-P3/joon/meats/meats.html">Meats</a>
-                  <a href="../P2-P3/joon/milk_eggs/milk_eggs.html"
-                    >Milk & Eggs</a
-                  >
-                  <a href="../P2-P3/ulas/snacks-aisle.html">Snacks</a>
-                  <a href="../P2-P3/francis/beverages.html">Beverages</a>
-                  <a href="../P2-P3/eve/prepared-meals.html">Prepared meals</a>
-                </div>
-              </li>
-              <li class="active"><a href="#">Deals</a></li>
-              <li class="active"><a href="#">Services</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a>
-              </li>
-              <li>
-                <a href="../P5/P5-login.html" class="fas fa-user" id="user"
-                  >Sign up</a
-                >
-              </li>
-            </ul>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../aisles.html">Aisles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../../extra/deals.html">Deals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../../extra/services.html" tabindex="-1" aria-disabled="true">Services</a>
+                </li>
+              </ul>
+            </div>
+             <span id="user-login"><a href="../../../P5/P5-login.html">Sign up</a></span>
+             <span id="shopping-cart"><a href="../../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
           </div>
         </nav>
       </div>
     </header>
-
-<p><br/></p>
-<p><br/></p>
-
-    <div class="wrapper">
-      <div class="one">
-        <h1 class="beverage-title">Green tea bottle</h1>
-      </div>
-
-      <div class="four">
-        <img class="product-image" src="images/green-tea.jpg" alt="tea-img">
-      </div>
-
-      <div class="product-grid">
-        <p class="product-info">Bottled green tea. Contains 24 mg of caffeine.</p>
-        <br>
-        <p class="product-details">Amount: 500ml</p>
-        <p class="product-details">Price: $3.00</p>
-        <p class="product-details"><a href="">Read more</a></p>
-        <br>
-        <form class="product-form" action="">
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" min="1" max="99" size="5">
-          <br><br>
-          <input type="submit" class="add" value="Add to cart">
-        </form>
-      </div>
-
-    </div>
-
-    <!-- common footer section starts  -->
+		<div class = "background">
+			<div class = "content">
+				<div class = "row grid-container whitebg whole-bd">
+					<div class = "item1">
+						<img src = "../beverages_images/green-tea.jpg" width = "200" height = "200"></br>
+						<h3>Green Tea</h3>
+						<hr style = "width:200px;" align = "left"/>
+						<p class = "description">$3.00</p>
+					</div>
+					<div class = "item2">
+						<h3>Product Description</h3>
+						<p id = "description">Bottled green tea. Contains<span id = "dots">...</span><span id = "more"> mg of caffeine. <br>Amount: 500ml</span></p>
+            <button type = "button" onclick= "readMore();" id = "readmore">More Description</button>
+					</div>
+					<div class = "item3">
+						<form action = "">
+              Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10" size = "5"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
+						</form>
+            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" size = "5" readonly>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- common footer section starts  -->
 
 <section class="footer">
-  <div class="box-container">
-    <div class="box">
-      <p id="title-footer">Quick links</p>
-      <p><a href="../P1/index.html">Home</a></p>
-      <p><a href="../about.html">About us</a></p>
-      <p><a href="../contact.html">Contact</a></p>
-    </div>
+    <div class="box-container">
+      <div class="box">
+        <p id="title-footer">Quick links</p>
+        <p><a href="../../../index.html">Home</a></p>
+        <p><a href="../../../extra/about.html">About us</a></p>
+        <p><a href="../../../extra/contact.html">Contact</a></p>
+      </div>
 
-    <div class="box">
-      <p id="title-footer">Follow us:</p>
-      <p><a href="https://facebook.com">Facebook</a></p>
-      <p><a href="https://instagram.com">Instagram</a></p>
+      <div class="box">
+        <p id="title-footer">Follow us:</p>
+        <p><a href="https://facebook.com">Facebook</a></p>
+        <p><a href="https://instagram.com">Instagram</a></p>
+      </div>
     </div>
-  </div>
-  <div>
-      <p><br/></p>
-    <footer class="copyright">
-      <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
-    </footer>
-  </div>
-</section>
-<!-- Install JavaScrip plugins and Popper -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"
-></script>
+    <div>
+        <p><br/></p>
+      <footer class="copyright">
+        <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+      </footer>
+    </div>
+  </section>
+  <!-- Install JavaScrip plugins and Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function subtotalCalc(){
+      var x = 3 * document.getElementById("quantity").value;
+      document.getElementById("subtotal").value = "$" + x;
+    }
+    function readMore(){
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("readmore");
+
+      if(dots.style.display === "none"){
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        btnText.innerHTML = "More Description";
+      }
+      else {
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        btnText.innerHTML = "Less Description";
+      }
+    }
+      document.getElementById("quantity").onchange = subtotalCalc;
+  </script>
 </body>
 </html>

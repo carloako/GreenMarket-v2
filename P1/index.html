@@ -29,76 +29,64 @@
 
   <body>
     <header>
+
       <div class="header-1">
-        <!-- facebook and instagram shortcut logos -->
-        <div class="follow">
-          <a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
-          <a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
-        </div>
+		<a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
+		<a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
       </div>
 
-      <div class="header-2">
-        <!-- main carrot logo and search bar -->
-
-        <a href="../P1/index.html" class="logo">
-          <i class="fas fa-carrot" id="favicon"></i><img src="../green_market-logo.png" id="market-name">
-        </a>
-        <div class="searching-container">
-        <form action="" class="search-bar-container">
-          <input type="search" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
-        </form>
-      </div>
-      </div>
-
-      <div class="nav">
-        <!-- menu bars -->
-
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Aisle 
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../P2-P3/john/fruits.html">Fruits</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/joon/vegetables/vegetables.html">Vegetables</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/joon/meats/meats.html">Meats</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/joon/milk_eggs/milk_eggs.html">Milk & Eggs</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/ulas/snacks-aisle.html">Snacks</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/francis/beverages.html">Beverages</a></li>
-                    <li><a class="dropdown-item" href="../P2-P3/eve/prepared-meals.html">Prepared meals</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Deals</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
-                </li>
-              </ul>
-            </div>
-             <span id="user-login"><a href=".../P5/P5-login.html">Sign up</a></span>
-             <span id="shopping-cart"><a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-          </div>
-        </nav>
-      </div>
+	  <div class="header-2">
+		  <a href="../index.html" class="logo"><img src="../green_market-logo.png" id="market-name"></a>
+		<div class="searching-container">
+			<form action class="search-bar-container">
+				<input type="search" id="search-bar" placeholder="Search product">
+				<a href="#" class="fas fa-search">
+				</a>
+			</form>
+		</div>
+	  </div>
+	  <!-- menu bars -->
+	  <div class="nav" id="nav-theme">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../P2-P3/aisles.html">Aisles</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../extra/deals.html">Deals</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../extra/services.html">Services</a>
+						</li>
+					</ul>
+					<div class="user-shopping">
+					<span id="shopping-cart">
+						<a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+					</span>
+					<span id="user-login">
+						<a href="../P5/P5-login.html" class="fas fa-user"></a>
+					</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+	  </div>
     </header>
 
 <p><br/></p>
 <p><br/></p>
 			<div class="container">
-				<a href="P1-P9/discount.html">
-					<img src="P1-P9/images/truck.jpg" alt="Truck" style="width:100%;border-radius:30px;">
+				<a href="../extra/deals.html">
+					<img src="images/truck.jpg" alt="Truck" style="width:100%;border-radius:30px;">
 					<div class="center-left">
 						<p style="font-size: 3vw;font-weight:bold;color:green;" 30>MORE DISCOUNTS!</p>
 					</div>
@@ -112,9 +100,8 @@
 			<div class="center-table whitebg whole-bd">
 				<div class="center-table-container">
 					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P1-P9/fruits/strawberries.html">
-							<img src="P1-P9/images/strawberries.jpg" width="200" height="300" align="center"
-								class="item-images"></br>
+						<a class="items" href="../P2-P3/john/fruits/strawberries.html">
+							<img src="../P2-P3/john/fruits_images/strawberries.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Strawberries</h3>
 						</a>
 						<div style="width:200px;margin:auto;">
@@ -123,8 +110,8 @@
 						</div>
 					</div>
 					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P1-P9/fruits/melon.html">
-							<img src="P1-P9/images/melons.jpg" width="200" height="300" class="item-images"></br>
+						<a class="items" href="../P2-P3/john/fruits/melon.html">
+							<img src="../P2-P3/john/fruits_images/melons.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Melons</h3>
 						</a>
 						<div style="width:200px;margin:auto;">
@@ -133,8 +120,8 @@
 						</div>
 					</div>
 					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P1-P9/fruits/watermelon.html">
-							<img src="P1-P9/images/watermelon.jpg" width="200" height="300" class="item-images"></br>
+						<a class="items" href="../P2-P3/john/fruits/watermelon.html">
+							<img src="../P2-P3/john/fruits_images/watermelon.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Watermelons</h3>
 						</a>
 						<div style="width:200px;margin:auto;">
@@ -143,8 +130,8 @@
 						</div>
 					</div>
 					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P1-P9/fruits/mango.html">
-							<img src="../images/mango.jpg" width="200" height="300" class="item-images"></br>
+						<a class="items" href="../P2-P3/john/fruits/mango.html">
+							<img src="../P2-P3/john/fruits_images/mango.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Mangoes</h3>
 						</a>
 						<div style="width:200px;margin:auto;">
@@ -161,35 +148,29 @@
 			</div>
 			<div class="center-table whitebg whole-bd">
 				<div class="center-table-container">
-					<div class="center-table-items2 item-bottom-bd">
-						<a class="items" href="P1-P9/fruits.html">
-							<img src="P1-P9/images/assorted_fruits.jpg" width="200" height="300"
+					<div class="center-table-items item-bottom-bd">
+						<a class="items" href="../P2-P3/john/fruits.html">
+							<img src="../P2-P3/aisles_images/fruits.jpg" width="200" height="300"
 								class="item-images"></br>
 							<h3 class="item-name">Fruits</h3>
 						</a>
 					</div>
-					<div class="center-table-items2 item-bottom-bd">
-						<a class="items" href="P7-8/P2-F.html">
-							<img src="P1-P9/images/beverages.jpg" width="200" height="300" class="item-images"></br>
+					<div class="center-table-items item-bottom-bd">
+						<a class="items" href="../P2-P3/francis/beverages.html">
+							<img src="../P2-P3/aisles_images/beverages.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Beverages</h3>
 						</a>
 					</div>
-					<div class="center-table-items2 item-bottom-bd">
-						<a class="items" href="P2-P3/prepared-meals.html">
-							<img src="P1-P9/images/meals.jpg" width="200" height="300" class="item-images"></br>
+					<div class="center-table-items item-bottom-bd">
+						<a class="items" href="../P2-P3/eve/prepared-meals.html">
+							<img src="../P2-P3/aisles_images/meals.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Meals</h3>
 						</a>
 					</div>
-					<div class="center-table-items2 item-bottom-bd">
-						<a class="items" href="Snacks/snacks-aisle.html">
-							<img src="P1-P9/images/snacks.jpg" width="200" height="300" class="item-images"></br>
+					<div class="center-table-items item-bottom-bd">
+						<a class="items" href="../P2-P3/ulas/snacks-aisle.html">
+							<img src="../P2-P3/aisles_images/snacks.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Snacks</h3>
-						</a>
-					</div>
-					<div class="center-table-items2 item-bottom-bd">
-						<a class="items" href="productmeats.html">
-							<img src="P1-P9/images/meat.jpg" width="200" height="300" class="item-images"></br>
-							<h3 class="item-name">Meat</h3>
 						</a>
 					</div>
 				</div>
@@ -198,34 +179,35 @@
 	</div>
 
 <!-- common footer section starts  -->
-
 <section class="footer">
-    <div class="box-container">
-      <div class="box">
-        <p id="title-footer">Quick links</p>
-        <p><a href="../P1/index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
-      </div>
+  <p><br/><br/></p>
+  <hr class="solid">
+  <div class="box-container">
+    <div class="box">
+      <p id="title-footer">Quick links</p>
+      <p><a href="../index.html">Home</a></p>
+      <p><a href="../extra/about.html">About us</a></p>
+      <p><a href="../extra/contact.html">Contact</a></p>
+    </div>
 
-      <div class="box">
-        <p id="title-footer">Follow us:</p>
-        <p><a href="https://facebook.com">Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-      </div>
+    <div class="box">
+      <p id="title-footer">Follow us:</p>
+      <p><a href="https://facebook.com">Facebook</a></p>
+      <p><a href="https://instagram.com">Instagram</a></p>
     </div>
-    <div>
-        <p><br/></p>
-      <footer class="copyright">
-        <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
-      </footer>
-    </div>
-  </section>
-  <!-- Install JavaScrip plugins and Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+  </div>
+
+  <div>
+    <footer class="copyright">
+      <p><br/>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+    </footer>
+  </div>
+</section>
+<!-- Install JavaScrip plugins and Popper -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
 </body>
 </html>
