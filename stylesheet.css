@@ -253,7 +253,7 @@ a {
     width: 100%;
   }
 hr.solid {
-    border-top: 2px solid #e5e7e1;
+    border-top: 2px solid #cacec3;
     width: 60%;
     display: block;
     margin-left: auto;
@@ -272,7 +272,7 @@ hr.solid {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    font-size: 90%;
+    font-size: 80%;
     border-right: 3px;
     border-right-color: #252722;
     width: 100px;
@@ -281,6 +281,10 @@ hr.solid {
 
 .footer a:visited {
     color: #b3c39c;
+}
+
+#link {
+    font-size: 90%;
 }
 
 #title-footer {
