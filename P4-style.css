@@ -28,6 +28,9 @@ body{
     padding: 5px;
     margin: 2px;
 }
+.dlt {
+    background-color: #ff1919;
+}
 .btn, .btn:link, .btn:hover, .btn:visited {
     color: white;
 }
