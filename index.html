@@ -46,8 +46,8 @@
 	  <div class="header-2">
 		  <a href="index.html" class="logo"><img src="green_market-logo.png" id="market-name"></a>
 		<div class="searching-container">
-			<form action class="search-bar-container">
-				<input type="search" id="search-bar" placeholder="Search product">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
 				<a href="#" class="fas fa-search">
 				</a>
 			</form>
@@ -234,5 +234,6 @@
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"
   ></script>
+	<script src="extra/search.js"></script>
   </body>
   </html>
