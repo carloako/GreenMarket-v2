@@ -43,7 +43,7 @@
 <p><br/></p>
 
 <h2>Sign up</h2>
-    <form action="action_page.php" style="border: 1px">
+    <form action="signup_page.php" style="border: 1px">
       <div class="container">
         <input
           class="btn btn-outline-secondary btn-small"
@@ -62,12 +62,13 @@
           required
         />
 
-        <label for="Password"><b>Password</b></label>
+        <label for="Password"><b>Password (8 characters minimum)</b></label>
         <input
           type="text"
           placeholder="Enter password"
           name="Password"
           id="Password"
+          minlength="8"
           required
         />
 
