@@ -40,12 +40,22 @@ body input[type=text] {
     border-radius: 4px;
     box-sizing: border-box;
 }
+body input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cbd6b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 .btn-outline-secondary {
     color: #b3c39c;
     border-color: #b3c39c;
     float: right;
     size: 80%;
+    font-size: 1.8rem;
 }
 .btn-outline-secondary:hover {
     color: #f6f8f2;
