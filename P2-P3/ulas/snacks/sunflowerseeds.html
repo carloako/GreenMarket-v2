@@ -28,6 +28,8 @@
   </head>
 
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
     <header>
       <div class="header-1">
         <!-- facebook and instagram shortcut logos -->
@@ -43,14 +45,17 @@
           <i class="fas fa-carrot" id="favicon"></i><img src="../../../green_market-logo.png" id="market-name">
         </a>
         <a href="../../../index.html" class="logo" id="title">
-          <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
+          <i class="fas fa-carrot" id="favicon"></i>
         </a>
 
-        <form onsubmit="return search()" class="search-bar-container">
-          <input type="text" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
-        </form>
-      </div>
+        <div class="searching-container">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
+				<a href="#" class="fas fa-search">
+				</a>
+			</form>
+		</div>
+	  </div>
 
       <div class="nav">
         <!-- menu bars -->
@@ -77,12 +82,14 @@
                 </li>
               </ul>
             </div>
-             <span id="user-login"><a href="../../../P5/P5-login.html">Sign up</a></span>
              <span id="shopping-cart"><a href="../../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-          </div>
+             <span id="user-login"><a href="../../../P5/P5-login.html" class="fas fa-user"></a></span>
+            </div>
         </nav>
       </div>
     </header>
+<br/> <br/><br/>
+<!-- content starts -->
 		<div class = "background">
 			<div class = "content">
 				<div class = "row grid-container whitebg whole-bd">
@@ -129,8 +136,8 @@
 	  <footer class="copyright">
 		<p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
 	  </footer>
-	</div>
   </section>
+</div>
   <!-- Install JavaScrip plugins and Popper -->
   <script src="../../../extra/search.js"></script>
   <script

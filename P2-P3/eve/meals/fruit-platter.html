@@ -28,6 +28,8 @@
   </head>
 
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
     <header>
       <div class="header-1">
         <!-- facebook and instagram shortcut logos -->
@@ -43,14 +45,17 @@
           <i class="fas fa-carrot" id="favicon"></i><img src="../../../green_market-logo.png" id="market-name">
         </a>
         <a href="../../../index.html" class="logo" id="title">
-          <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
+          <i class="fas fa-carrot" id="favicon"></i>
         </a>
 
-        <form onsubmit="return search()" class="search-bar-container">
-          <input type="text" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
-        </form>
-      </div>
+        <div class="searching-container">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
+				<a href="#" class="fas fa-search">
+				</a>
+			</form>
+		</div>
+	  </div>
 
       <div class="nav">
         <!-- menu bars -->
@@ -77,12 +82,14 @@
                 </li>
               </ul>
             </div>
-             <span id="user-login"><a href="../../../P5/P5-login.html">Sign up</a></span>
              <span id="shopping-cart"><a href="../../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-          </div>
+             <span id="user-login"><a href="../../../P5/P5-login.html" class="fas fa-user"></a></span>
+            </div>
         </nav>
       </div>
     </header>
+<br/> <br/><br/>
+<!-- content starts -->
 		<div class = "background">
 			<div class = "content">
 				<div class = "row grid-container whitebg whole-bd">
@@ -93,7 +100,7 @@
 						<p class = "description">$5.99</p>
 					</div>
 					<div class = "item2">
-						<h3>Product Description</h3>
+						<h3 style="font-family: MontserratLight;">Product Description</h3>
 						<p id = "description">A fruit platter made up<span id = "dots">...</span><span id = "more"> of orange and lime slides.</span></p>
             <button type = "button" onclick= "readMore();" id = "readmore">More Description</button>
 					</div>
@@ -106,29 +113,31 @@
 				</div>
 			</div>
 		</div>
+    </div>
+<!-- content ends-->
+
 <!-- common footer section starts  -->
 
-<section class="footer">
-    <div class="box-container">
-      <div class="box">
-        <p id="title-footer">Quick links</p>
-        <p><a href="../../../index.html">Home</a></p>
-        <p><a href="../../../extra/about.html">About us</a></p>
-        <p><a href="../../../extra/contact.html">Contact</a></p>
-      </div>
+<section class="footer" id="footer">
+	<hr class="solid">
+	<div class="box-container">
+		<div class="box">
+		  <p id="title-footer" id="link">Quick links</p>
+      <p><a href="index.html" id="link">Home</a></p>
+      <p><a href="extra/about.html" id="link">About us</a></p>
+      <p><a href="extra/contact.html" id="link">Contact</a></p>
+		</div>
 
-      <div class="box">
-        <p id="title-footer">Follow us:</p>
-        <p><a href="https://facebook.com">Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-      </div>
-    </div>
-    <div>
-        <p><br/></p>
-      <footer class="copyright">
-        <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
-      </footer>
-    </div>
+		<div class="box">
+		  <p id="title-footer">Follow us:</p>
+		  <p><a href="https://facebook.com" id="link">Facebook</a></p>
+		  <p><a href="https://instagram.com" id="link">Instagram</a></p>
+		</div>
+	  </div>
+	  <footer class="copyright">
+		<p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+	  </footer>
+	</div>
   </section>
   <!-- Install JavaScrip plugins and Popper -->
   <script src="../../../extra/search.js"></script>
