@@ -5,14 +5,12 @@
     <meta
       charset="utf-8"
       name="viewport"
-      content="width = device-width, initial-scale = 1.0"
+      content="width = device-width, initial-scale = 1"
     />
-	<!-- Swiper CDN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-	<!-- font awesome CDN -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -26,26 +24,31 @@
     />
     <!-- Custom Stylesheets -->
     <link href="../stylesheet.css" rel="stylesheet" />
-    <link href="../P1_P2-style.css" rel="stylesheet"/>
-    <link href="../P4-style.css" rel="stylesheet"/>
-
-	<!-- JS file -->
-	<script type="text/javascript" src="../home.js"></script>
+    <link href="../P4-style.css" rel="stylesheet" />
   </head>
 
-  <body onload = "totalWOTax()">
-	<div id="page-container">
-		<div id="content-wrap">
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
     <header>
-
       <div class="header-1">
-		<a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
-		<a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
+        <!-- facebook and instagram shortcut logos -->
+        <div class="follow">
+          <a href="#" class="fab fa-facebook" style="font-size: 24px"></a>
+          <a href="#" class="fab fa-instagram" style="font-size: 24px"></a>
+        </div>
       </div>
 
-	  <div class="header-2">
-		  <a href="../index.html" class="logo"><img src="../green_market-logo.png" id="market-name"></a>
-		<div class="searching-container">
+      <div class="header-2">
+        <!-- main carrot logo and search bar -->
+        <a href="../index.html" class="logo">
+          <i class="fas fa-carrot" id="favicon"></i><img src="../green_market-logo.png" id="market-name">
+        </a>
+        <a href="../index.html" class="logo" id="title">
+          <i class="fas fa-carrot" id="favicon"></i>
+        </a>
+
+        <div class="searching-container">
 			<form onsubmit="return search()" class="search-bar-container">
 				<input type="text" id="search-bar" placeholder="Search product">
 				<a href="#" class="fas fa-search">
@@ -53,41 +56,37 @@
 			</form>
 		</div>
 	  </div>
-	  <!-- menu bars -->
-	  <div class="nav" id="nav-theme">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../P2-P3/aisles.html">Aisles</a>
-						</li>
-						<li class="nav-item">
-              <a class="nav-link" href="../extra/deals.html">Deals</a>
-						</li>
-						<li class="nav-item">
-              <a class="nav-link" href="../extra/services.html">Services</a>
-						</li>
-					</ul>
-					<div class="user-shopping">
-					<span id="shopping-cart">
-						<a href="../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
-					</span>
-					<span id="user-login">
-						<a href="../P5/P5-login.html" class="fas fa-user"></a>
-					</span>
-					</div>
-				</div>
-			</div>
-		</nav>
-	  </div>
+
+      <div class="nav">
+        <!-- menu bars -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../P2-P3/aisles.html">Aisles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../extra/deals.html">Deals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../extra/services.html" tabindex="-1" aria-disabled="true">Services</a>
+                </li>
+              </ul>
+            </div>
+             <span id="shopping-cart"><a href="P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
+             <span id="user-login"><a href="../P5/P5-login.html" class="fas fa-user"></a></span>
+            </div>
+        </nav>
+      </div>
     </header>
 <!-- P4 shopping cart section starts -->
 
@@ -152,9 +151,10 @@
   </div>
 </div>
 </section>
+    </div>
 <!-- shopping cart section ends -->
 
-<!-- common footer section starts  -->
+<!-- common footer section starts-->
 <section class="footer">
 	<hr class="solid">
 	<div class="box-container">
@@ -167,15 +167,15 @@
 
 		<div class="box">
 		  <p id="title-footer">Follow us:</p>
-		  <p><a href="https://facebook.com" id="link">Facebook</a></p>
-		  <p><a href="https://instagram.com" id="link">Instagram</a></p>
+		  <p><a href="../https://facebook.com" id="link">Facebook</a></p>
+		  <p><a href="../https://instagram.com" id="link">Instagram</a></p>
 		</div>
 	  </div>
 	  <footer class="copyright">
 		<p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
 	  </footer>
-	</div>
   </section>
+</div>
   <!-- Install JavaScrip plugins and Popper -->
   <script src="../extra/search.js"></script>
   <script
