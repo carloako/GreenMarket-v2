@@ -77,7 +77,7 @@
 					</ul>
 					<div class="user-shopping">
 					<span id="shopping-cart">
-						<a href="../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+						<a href="P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
 					</span>
 					<span id="user-login">
 						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
@@ -88,80 +88,16 @@
 		</nav>
 	  </div>
     </header>
-
-    <div class = "" style = "overflow:hidden; white-space:nowrap;margin:1%">
-			<h2>Prepared Meals <hr style = "display:inline-block; width: 100%;"/></h2>
+		<div class = "" style = "overflow:hidden; white-space:nowrap;margin:1%">
+			<h2>Fruits <hr style = "display:inline-block; width: 100%;"/></h2>
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-<<<<<<< Updated upstream
-					<div class = "aisle-box-items" style = "align:left;">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/pasta.html">
-								<img src = "meals_images/pasta.jpg" width = "250" height = "250"></br>
-								<h3>Pasta Bowl</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$7.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/tuna-salad.html">
-								<img src = "meals_images/tuna-salad.jpg" width = "250" height = "250"></br>
-								<h3>Tuna Salad</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$5.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/soup.html">
-								<img src = "meals_images/soup.jpg" width = "250" height = "250"></br>
-								<h3>Squash Soup</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$6.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/tomato-salad.html">
-								<img src = "meals_images/tomato-salad.jpg" width = "250" height = "250"></br>
-								<h3>Tomato Salad</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$8.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/salmon.html">
-								<img src = "meals_images/salmon.jpg" width = "250" height = "250"></br>
-								<h3>Salmon In Sauce</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$12.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/fruit-platter.html">
-								<img src = "meals_images/fruit-platter.jpg" width = "250" height = "250"></br>
-								<h3>Fruit Platter</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$5.99</p>
-						</div>
-					</div>
-=======
-					<?php?>
->>>>>>> Stashed changes
+                <?php include "aisle_items.php"?>
 			</div>
 		</div>
+		
 <!-- common footer section starts  -->
-
 <section class="footer">
     <div class="box-container">
       <div class="box">

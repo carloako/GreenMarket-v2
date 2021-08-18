@@ -45,8 +45,8 @@
 	  <div class="header-2">
 		  <a href="../../index.html" class="logo"><img src="../../green_market-logo.png" id="market-name"></a>
 		<div class="searching-container">
-			<form action class="search-bar-container">
-				<input type="search" id="search-bar" placeholder="Search product">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
 				<a href="#" class="fas fa-search">
 				</a>
 			</form>
@@ -69,10 +69,10 @@
 							<a class="nav-link" href="../../P2-P3/aisles.html">Aisles</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Deals</a>
+							<a class="nav-link" href="../../extra/deals.html">Deals</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
+							<a class="nav-link" href="../../extra/services.html">Services</a>
 						</li>
 					</ul>
 					<div class="user-shopping">
@@ -94,70 +94,7 @@
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-<<<<<<< Updated upstream
-					<div class = "aisle-box-items" style = "align:left;">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/pasta.html">
-								<img src = "meals_images/pasta.jpg" width = "250" height = "250"></br>
-								<h3>Pasta Bowl</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$7.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/tuna-salad.html">
-								<img src = "meals_images/tuna-salad.jpg" width = "250" height = "250"></br>
-								<h3>Tuna Salad</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$5.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/soup.html">
-								<img src = "meals_images/soup.jpg" width = "250" height = "250"></br>
-								<h3>Squash Soup</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$6.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/tomato-salad.html">
-								<img src = "meals_images/tomato-salad.jpg" width = "250" height = "250"></br>
-								<h3>Tomato Salad</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$8.99</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/salmon.html">
-								<img src = "meals_images/salmon.jpg" width = "250" height = "250"></br>
-								<h3>Salmon In Sauce</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$12.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "meals/fruit-platter.html">
-								<img src = "meals_images/fruit-platter.jpg" width = "250" height = "250"></br>
-								<h3>Fruit Platter</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$5.99</p>
-						</div>
-					</div>
-=======
-					<?php?>
->>>>>>> Stashed changes
+					<?php include "aisle-items.php"?>
 			</div>
 		</div>
 <!-- common footer section starts  -->
@@ -167,8 +104,8 @@
       <div class="box">
         <p id="title-footer">Quick links</p>
         <p><a href="../../index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../../extra/about.html">About us</a></p>
+        <p><a href="../../extra/contact.html">Contact</a></p>
       </div>
 
       <div class="box">
@@ -185,6 +122,7 @@
     </div>
   </section>
   <!-- Install JavaScrip plugins and Popper -->
+  <script src="../../extra/search.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
