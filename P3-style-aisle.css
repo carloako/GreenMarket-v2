@@ -17,11 +17,6 @@
     text-align: center;
 }
 /* aisle title */
-.aisle-title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: black;
-}
 /* product names in links */
 .aisle-box-items-contents a:link,.aisle-box-items-contents a:visited,.aisle-box-items-contents a:visited:hover{
     color: black;
@@ -35,3 +30,9 @@
 .description {
     font-size: 14px;
 }
+
+#footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+  }

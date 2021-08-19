@@ -33,7 +33,7 @@
     <header>
       <div class="header-2">
         <!-- main logo and search bar -->
-        <a href="../P1/index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
+        <a href="../index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
         </a>
       </div>
     </header>
@@ -45,47 +45,45 @@
 <!-- P5: Login section starts here -->
 
 <h2>User Login page</h2>
-
-<br>
-<br>
-
 <!-- login box part -->
+    <form action="login_page.php" style="border: 1px">
+      <div class="container">
+        <label for="e-mail"><b>E-mail</b></label>
+        <input
+          type="text"
+          placeholder="Enter e-mail"
+          name="e-mail"
+          id="e-mail"
+          required
+        />
 
-<div class="login_box">
-
-    <h1> username/email </h1>
-    
-    <input type="username" name="username" value="username" 
-    onFocus="field_focus(this, 'username');" 
-    onblur="field_blur(this, 'username');" class="username" />
-
-    <br>
-    <br>
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter password"
+          name="password"
+          id="password"
+          required
+        />
+        <p>
+          <a href="../extra/forgotpassword.html" style="font-size:80%; float: right;">Forgot your password?</a>
+        </p>
+        
+        <input type="signup" onclick="location.href='../index.html'" value="Log in">
+      </div>
       
-    <input type="password" name="username" value="username" 
-    onFocus="field_focus(this, 'username');" 
-    onblur="field_blur(this, 'username');" class="username" />
-
-    <br>
-    <br>
-
-    <!-- buttons -->
-      
-    <a href="#"><div class="btn">Submit</div></a> <!-- End Submit button -->
-
-    <a href="#"><div id="btn2">Forgot P.W</div></a> <!-- End forgot PW button -->
-    
-    <a href="#"><div id="btn3">Sign Up</div></a> <!-- End Sign up button -->
-      
-    </div> 
-    
-    <!-- End login Box -->
-      
+      <!-- create an account link -->
+      <div class="container signin">
+        <p style="font-size:90%;">
+          Not a member yet?
+          <a href="../P6/P6-sign_up.html" id="signin"> Create an account</a>
+       </p>
+      </div>
     </form>
-    </div>
 
 
-    
+
+
    <!-- common footer section starts  -->
 
    <section class="footer">
