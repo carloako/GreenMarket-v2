@@ -1,5 +1,5 @@
 <?php
-    $xml = simplexml_load_file('../mainxml.xml');
+    $xml = simplexml_load_file('../private/database.xml');
     $products = $xml->product;
     print_r($_SESSION);
     $keys = array_keys($_SESSION);

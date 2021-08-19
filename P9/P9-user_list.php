@@ -68,7 +68,7 @@
           </thead>
           <tbody>
             <?php
-                $xml = simplexml_load_file('mainxml.xml');
+                $xml = simplexml_load_file('private/database.xml');
                 $users = $xml->user;
 
                 foreach ($users as $user){
