@@ -6,7 +6,7 @@
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('mainxml.xml');
+        $xml = simplexml_load_file('private/database.xml');
         $targetID= $_POST["id"];
         $users = $xml->user;
         if ($targetID !== ""){
@@ -50,7 +50,7 @@
             $newuser->addChild("postalcode",$_POST["postal-code"]);
             $newuser->addChild("phonenumber",$_POST["phone-number"]);
         }
-        $xml->asXML('mainxml.xml');
+        $xml->asXML('private/database.xml');
     ?>
 </body>
 </html>

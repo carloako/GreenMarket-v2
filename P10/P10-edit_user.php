@@ -47,7 +47,7 @@
             <div class="container">
               <h1>Edit profile</h1><br>
                 <?php
-                    $xml = simplexml_load_file('mainxml.xml');
+                    $xml = simplexml_load_file('private/database.xml');
                     $users = $xml->user;
                     $email = "";
                     $password = "";
