@@ -9,7 +9,7 @@ function minus() {
     if (document.getElementById("quantity").value === "") {
         document.getElementById("quantity").value = 0;
     }
-    if (document.getElementById("quantity").value != 0) {
+    if (document.getElementById("quantity").value != 1) {
         document.getElementById("quantity").value = parseInt(document.getElementById("quantity").value) - 1;
     }
     save();

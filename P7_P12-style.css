@@ -73,6 +73,7 @@ table caption {
   border-color: #b3c39c;
   background-color:#f6f8f2;
   size: 80%;
+  font-size: 18px;
 }
 .btn-primary:hover {
   color: #f6f8f2;
@@ -111,6 +112,23 @@ table caption {
   margin-left: 160px;
   padding: 0px 10px;
 }
+
+/* chose file styling */
+input[type="file"] {
+  display: none;
+}
+
+/* text area fixing */
+textarea#styled {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cbd6b9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 @media screen and (max-width: 600px) {
   table {

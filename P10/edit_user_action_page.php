@@ -1,12 +1,12 @@
 <?php
     // session_start();
-    // header("Location: P9-user_list.php");
+    header("Location: ../P9/P9-user_list.php");
 ?>
 <!DOCTYPE html>
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('mainxml.xml');
+        $xml = simplexml_load_file('../database.xml');
         $targetID= $_POST["id"];
         $users = $xml->user;
         if ($targetID !== ""){
@@ -50,7 +50,7 @@
             $newuser->addChild("postalcode",$_POST["postal-code"]);
             $newuser->addChild("phonenumber",$_POST["phone-number"]);
         }
-        $xml->asXML('mainxml.xml');
+        $xml->asXML('../database.xml');
     ?>
 </body>
 </html>

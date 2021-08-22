@@ -45,8 +45,8 @@
 	  <div class="header-2">
 		  <a href="../../index.html" class="logo"><img src="../../green_market-logo.png" id="market-name"></a>
 		<div class="searching-container">
-			<form action class="search-bar-container">
-				<input type="search" id="search-bar" placeholder="Search product">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
 				<a href="#" class="fas fa-search">
 				</a>
 			</form>
@@ -69,15 +69,15 @@
 							<a class="nav-link" href="../../P2-P3/aisles.html">Aisles</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Deals</a>
+              <a class="nav-link" href="../../extra/deals.html">Deals</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="../../extra/services.html">Services</a>
 						</li>
 					</ul>
 					<div class="user-shopping">
 					<span id="shopping-cart">
-						<a href="P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
+						<a href="../../P4/P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
 					</span>
 					<span id="user-login">
 						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
@@ -93,18 +93,19 @@
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-                <?php include "aisle_items.php"?>
+				<?php include "aisle_items.php"?>
 			</div>
 		</div>
-		
+					
 <!-- common footer section starts  -->
 <section class="footer">
     <div class="box-container">
       <div class="box">
         <p id="title-footer">Quick links</p>
         <p><a href="../../index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../../extra/about.html">About us</a></p>
+        <p><a href="../../extra/contact.html">Contact</a></p>
+
       </div>
 
       <div class="box">
@@ -121,6 +122,7 @@
     </div>
   </section>
   <!-- Install JavaScrip plugins and Popper -->
+  <script src="../../extra/search.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

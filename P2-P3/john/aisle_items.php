@@ -1,8 +1,8 @@
 <?php 
-    $xml = simplexml_load_file('mainxml.xml');
+    $xml = simplexml_load_file('../../database.xml');
     $product = $xml->product;
     for($i = 0; $i < count($product);$i++){
-        if ($product[$i]->type == "fruit"){
+        if ($product[$i]->attributes()->category == "fruits"){
             $name = $product[$i]->name;
             $price = $product[$i]->price;
             $pnumber = $product[$i]->product_number;

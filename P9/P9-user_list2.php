@@ -55,7 +55,7 @@
   <div class="background">
     <div class="content">
       <div>
-        <table>
+        <table vertical-align = "center">
           <caption>List of Users</caption>
           <thead>
             <tr>
@@ -67,7 +67,22 @@
             </tr>
           </thead>
           <tbody>
+            <?php
+                $xml = simplexml_load_file('mainxml.xml');
+                $users = $xml->user;
 
+                foreach ($users as $user){
+                    echo "<tr>";
+                    echo "<form action = \"delete_user_action.php\" method = \"post\">";
+                    echo "<td data-label = \"First Name\">$user->firstname</td>";
+                    echo "<td data-label = \"Last Name\">$user->lastname</td>";
+                    echo "<td data-label = \"Email Address\">$user->email</td>";
+                    echo "<td data-label=\"Action\"><input type = \"submit\" class = \"edit-button\" value = \"Edit\" formaction = \"P10-edit_user.php\" style = \"\" name = \"edit-button\"><input type = \"hidden\" value = \"$user->email\" name = \"email\"></td>";
+                    echo "<td data-label=\"Delete\"><input type = \"image\" src = \"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png\" id = \"\" value = \"\" name = \"delete-button\"></td>";
+                    echo "</form>";
+                    echo "</tr>";
+                }
+            ?>
             <tr>
               <td data-label="First Name">John</td>
               <td data-label="Last Name">Doe</td>
@@ -89,7 +104,7 @@
 
         </table>
         <br>
-        <form action="../P10/P10-edit_user.html" style="margin-left:10%;"> <input class="btn btn-primary" type="submit" value="Add a new user" />
+        <form action="P10-edit_user.php" style="margin-left:10%;"> <input class="btn btn-primary" type="submit" value="Add a new user" />
         </form>
       </div>
     </div>

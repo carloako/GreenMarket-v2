@@ -1,6 +1,6 @@
 <?php
     session_start();
-    header("Location: P4-shopping_cart.php");
+    header("Location: ../../P4/P4-shopping_cart.php");
 ?>
 <!DOCTYPE html>
 <html>

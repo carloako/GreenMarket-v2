@@ -77,7 +77,7 @@
 					</ul>
 					<div class="user-shopping">
 					<span id="shopping-cart">
-						<a href="../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+						<a href="../../P4/P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
 					</span>
 					<span id="user-login">
 						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
@@ -94,7 +94,7 @@
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-                <?php include "aisle_items.php"?>
+				<?php include "aisle_items.php"?>
 			</div>
 		</div>
 

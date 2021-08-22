@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Grocery>
-  <product>
+<greenmarket>
+  <product category="fruits">
     <product_number>001</product_number>
     <type>fruit</type>
     <name>Banana</name>
     <price>10</price>
     <description>Our bananas came from the best green jungles. It is gathered and safely as well. It is full of potassiom and very good for the human body.</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>002</product_number>
     <type>fruit</type>
     <name>Raspberries</name>
     <price>3.5</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>003</product_number>
     <type>fruit</type>
     <name>Avocado</name>
     <price>5</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>004</product_number>
     <type>fruit</type>
     <name>Grapes</name>
     <price>4</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>005</product_number>
     <type>fruit</type>
     <name>Lime</name>
     <price>4.23</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>006</product_number>
     <type>fruit</type>
     <name>Strawberries</name>
     <price>8</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>007</product_number>
     <type>fruit</type>
     <name>Melon</name>
     <price>1</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>008</product_number>
     <type>fruit</type>
     <name>Watermelon</name>
     <price>12</price>
     <description>description</description>
   </product>
-  <product>
+  <product category="fruits">
     <product_number>009</product_number>
     <type>fruit</type>
     <name>Mango</name>
@@ -76,19 +76,23 @@
     <phonenumber>number</phonenumber>
     <session/>
   </user>
-  <user>
-    <id>473</id>
-    <email>a</email>
-    <password>a</password>
-    <firstname>a</firstname>
-    <lastname>a</lastname>
-    <address>a</address>
-    <city>a</city>
-    <postalcode>a</postalcode>
-    <phonenumber>a</phonenumber>
-  </user>
+  
   <cart>
     <session>1</session>
     <banana>5</banana>
   </cart>
-</Grocery>
+  <cart>
+    <session>1</session>
+    <banana>9</banana>
+    <watermelon>6</watermelon>
+  </cart>
+  <cart>
+    <session>1</session>
+    <banana>9</banana>
+    <watermelon>6</watermelon>
+  </cart>
+  <cart>
+    <session>1</session>
+    <watermelon>10</watermelon>
+  </cart>
+<user><id>852</id><email>jj@gmail.com</email><password>012301203</password><firstname>Abrams</firstname><lastname>asdasd</lastname><address>asdas</address><city>asdasd</city><postalcode>asd</postalcode><phonenumber>asd</phonenumber></user></greenmarket>

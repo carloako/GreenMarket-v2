@@ -28,6 +28,8 @@
   </head>
 
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
     <header>
       <div class="header-1">
         <!-- facebook and instagram shortcut logos -->
@@ -39,18 +41,21 @@
 
       <div class="header-2">
         <!-- main carrot logo and search bar -->
-        <a href="P1/index.html" class="logo">
+        <a href="../../../index.html" class="logo">
           <i class="fas fa-carrot" id="favicon"></i><img src="../../../green_market-logo.png" id="market-name">
         </a>
-        <a href="../P1/index.html" class="logo" id="title">
-          <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
+        <a href="../../../index.html" class="logo" id="title">
+          <i class="fas fa-carrot" id="favicon"></i>
         </a>
 
-        <form action="" class="search-bar-container">
-          <input type="search" id="search-bar" placeholder="Search product" />
-          <a href="#"><label for="search-bar" class="fas fa-search"></label></a>
-        </form>
-      </div>
+        <div class="searching-container">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
+				<a href="#" class="fas fa-search">
+				</a>
+			</form>
+		</div>
+	  </div>
 
       <div class="nav">
         <!-- menu bars -->
@@ -66,32 +71,25 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Aisle 
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../fruits.html">Fruits</a></li>
- 
-                    <li><a class="dropdown-item" href="../../ulas/snacks-aisle.html">Snacks</a></li>
-                    <li><a class="dropdown-item" href="../../francis/beverages.html">Beverages</a></li>
-                    <li><a class="dropdown-item" href="../../eve/prepared-meals.html">Prepared meals</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../aisles.html">Aisles</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Deals</a>
+                  <a class="nav-link" href="../../../extra/deals.html">Deals</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
+                  <a class="nav-link" href="../../../extra/services.html" tabindex="-1" aria-disabled="true">Services</a>
                 </li>
               </ul>
             </div>
-             <span id="user-login"><a href="../../../P5/P5-login.html">Sign up</a></span>
              <span id="shopping-cart"><a href="../../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-          </div>
+             <span id="user-login"><a href="../../../P5/P5-login.html" class="fas fa-user"></a></span>
+            </div>
         </nav>
       </div>
     </header>
+<br/> <br/><br/>
+<!-- content starts -->
 		<div class = "background">
 			<div class = "content">
 				<div class = "row grid-container whitebg whole-bd">
@@ -99,18 +97,18 @@
 						<img src = "../fruits_images/raspberries.jpg" width = "200" height = "300"></br>
 						<h3>Raspberries</h3>
 						<hr style = "width:200px;" align = "left"/>
-						<p class = "description">$3.50/piece <br/> $0.65/100g</p>	
+						<p class = "description">$3.50/piece <br/> $0.65/100g</p>
 					</div>
 					<div class = "item2">
 						<h3>Product Description</h3>
 						<p id = "description">Our raspberries came only from the best farms. It is very sweet and full<span id = "dots">...</span><span id = "more"> of vitamin C, iron and antioxidants. It is recommended to eat it with jams or ice cream.</span></p>
             <button type = "button" onclick= "readMore();" id = "readmore">More Description</button>
 					</div>
-					<div class = "item3">
+          <div class = "item3">
 						<form action = "">
-							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
+							Quantity: <input type = "number" name = "quantity" id = "quantity" min = "1" max = "10" size = "5"/> &nbsp; &nbsp; <input type = "submit" value = "Add to Cart"/>
 						</form>
-            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" readonly>
+            <label for = "subtotal">Total: </label><input type = "text" id = "subtotal" name = "subtotal" size = "5" readonly>
 					</div>
 				</div>
 			</div>
@@ -122,8 +120,8 @@
       <div class="box">
         <p id="title-footer">Quick links</p>
         <p><a href="../../../index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../../../extra/about.html">About us</a></p>
+        <p><a href="../../../extra/contact.html">Contact</a></p>
       </div>
 
       <div class="box">
@@ -140,6 +138,7 @@
     </div>
   </section>
   <!-- Install JavaScrip plugins and Popper -->
+  <script src="../../../extra/search.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

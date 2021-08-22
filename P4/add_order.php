@@ -6,7 +6,7 @@
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('mainxml.xml');
+        $xml = simplexml_load_file('../database.xml');
         $newcart = $xml->addChild("cart");
         $products = $xml->product;
         $keys = array_keys($_SESSION);
@@ -22,7 +22,8 @@
             }
             $newcart->addChild(strtolower($productname),$_SESSION["$key"]);
         }
-        $xml->asXML('mainxml.xml');
+        session_unset();
+        $xml->asXML('../database.xml');
     ?>
 </body>
 </html>

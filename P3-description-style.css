@@ -8,7 +8,7 @@ html, body{
     background-color: white;
     height: 100%;
     margin:auto;
-    margin-bottom: 1%;
+    margin-top: 1%;
     margin-bottom: 1%;
     padding:1%;
     width:90%;
@@ -54,7 +54,7 @@ html, body{
 }
 @media only screen and (min-width: 650px){
     .grid-container {
-        width:60%;
+        width:80%;
     }
 }
 @media only screen and (min-width: 1184px){
@@ -108,23 +108,55 @@ html, body{
     margin-bottom: 5px;
 }
 /* input for quantity and total */
-input[type=number], input[type=text] {
-    border: 2px solid #64c472;
+input[type=number] {
+    border: 2px solid #a0b284;
     box-sizing: border-box;
     border-radius: 3px;
+}
+input[type=text] {
+    border: 2px solid #a0b284;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.plus-minus-button {
+    border: none;
+    border-radius: 3px;
+    background-color: #b3c39c;
+    color: white;
+    padding: 5px;
 }
 /* add to cart */
 input[type=submit]  {
     border: none;
     border-radius: 3px;
-    background-color: #07942c;
+    background-color: #b3c39c;
     color: white;
     padding: 5px;
 }
+input[type=submit]:hover {
+    color: #f6f8f2;
+    border-color: #b3c39c;
+    background-color:#c5cfb6;
+}
+
 /* read more button */
 #readmore {
-    padding:0;
+    padding-top: 2px;
     border: none;
     background-color: white;
-    color:blueviolet;
+    color:#b3c39c;
+    font-size: 14px;
 }
+#readmore:hover {
+    color: #cbd6b9;
+}
+
+.atc {
+    padding-bottom:2px;
+    padding-top:2px;
+}
+#footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+  }

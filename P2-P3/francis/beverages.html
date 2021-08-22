@@ -45,8 +45,8 @@
 	  <div class="header-2">
 		  <a href="../../index.html" class="logo"><img src="../../green_market-logo.png" id="market-name"></a>
 		<div class="searching-container">
-			<form action class="search-bar-container">
-				<input type="search" id="search-bar" placeholder="Search product">
+			<form onsubmit="return search()" class="search-bar-container">
+				<input type="text" id="search-bar" placeholder="Search product">
 				<a href="#" class="fas fa-search">
 				</a>
 			</form>
@@ -69,15 +69,15 @@
 							<a class="nav-link" href="../../P2-P3/aisles.html">Aisles</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Deals</a>
+              <a class="nav-link" href="../../extra/deals.html">Deals</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="../../extra/services.html">Services</a>
 						</li>
 					</ul>
 					<div class="user-shopping">
 					<span id="shopping-cart">
-						<a href="../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+						<a href="../../P4/P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
 					</span>
 					<span id="user-login">
 						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
@@ -94,66 +94,7 @@
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-					<div class = "aisle-box-items" style = "align:left;">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/water.html">
-								<img src = "beverages_images/water-bottle.jpg" width = "250" height = "250"></br>
-								<h3>Bottled Water</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$1</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/orange.html">
-								<img src = "beverages_images/orange-juice.jpg" width = "250" height = "250"></br>
-								<h3>Orange Juice</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$2.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/milk.html">
-								<img src = "beverages_images/milk.jpg" width = "250" height = "250"></br>
-								<h3>Milk</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$3</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/tea.html">
-								<img src = "beverages_images/green-tea.jpg" width = "250" height = "250"></br>
-								<h3>Green Tea</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$4</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/smoothie.html">
-								<img src = "beverages_images/smoothie.jpg" width = "250" height = "250"></br>
-								<h3>Smoothies</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$7</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/wine.html">
-								<img src = "beverages_images/wine.jpg" width = "250" height = "250"></br>
-								<h3>Wine Bottle</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$15</p>
-						</div>
-					</div>
+				<?php include "aisle_items.php"?>
 			</div>
 		</div>
 
@@ -165,8 +106,8 @@
     <div class="box">
       <p id="title-footer">Quick links</p>
       <p><a href="../../index.html">Home</a></p>
-      <p><a href="../about.html">About us</a></p>
-      <p><a href="../contact.html">Contact</a></p>
+      <p><a href="../../extra/about.html">About us</a></p>
+      <p><a href="../../extra/contact.html">Contact</a></p>
     </div>
 
     <div class="box">
@@ -183,6 +124,7 @@
   </div>
 </section>
 <!-- Install JavaScrip plugins and Popper -->
+<script src="../../extra/search.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

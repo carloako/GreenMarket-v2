@@ -13,8 +13,8 @@ session_start();
   <!-- install Bootstrap 4 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Custom Stylesheets -->
-  <link href="stylesheet.css" rel="stylesheet" />
-  <link href="P3-description-style.css" rel="stylesheet" />
+  <link href="../../stylesheet.css" rel="stylesheet" />
+  <link href="../../P3-description-style.css" rel="stylesheet" />
 </head>
 
 <body id="body">
@@ -29,10 +29,10 @@ session_start();
 
     <div class="header-2">
       <!-- main carrot logo and search bar -->
-      <a href="P1/index.html" class="logo">
-        <i class="fas fa-carrot" id="favicon"></i><img src="../../../green_market-logo.png" id="market-name">
+      <a href="../../index.html" class="logo">
+        <i class="fas fa-carrot" id="favicon"></i><img src="../../green_market-logo.png" id="market-name">
       </a>
-      <a href="../P1/index.html" class="logo" id="title">
+      <a href="../../P1/index.html" class="logo" id="title">
         <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
       </a>
 
@@ -56,17 +56,8 @@ session_start();
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Aisle
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="../fruits.html">Fruits</a></li>
-
-                  <li><a class="dropdown-item" href="../../ulas/snacks-aisle.html">Snacks</a></li>
-                  <li><a class="dropdown-item" href="../../francis/beverages.html">Beverages</a></li>
-                  <li><a class="dropdown-item" href="../../eve/prepared-meals.html">Prepared meals</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="P2-P3/aisles.html">Aisles</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Deals</a>
@@ -87,7 +78,7 @@ session_start();
       <?php include "productphp.php" ?>
       <div class="row grid-container whitebg whole-bd">
         <div class="item1">
-          <?php echo "<img src=\"../images/$picturename.jpg\" width=\"200\" height=\"300\"></br>"; ?>
+          <?php echo "<img src=\"../images/$picturename.jpg\" width=\"200\" height=\"200\"></br>"; ?>
           <?php echo "<h3>$name</h3>"; ?>
           <hr style="width:200px;" align="left" />
           <?php printf("%s%.2f%s", "<p class = \"description\">\$", $price, "</p>"); ?>
@@ -101,11 +92,13 @@ session_start();
         </div>
         <div class="item3">
           <form action="put_in_cart.php" method="post">
-            Quantity: <input type="button" value="-" id="minus"><input type="text" name="quantity" id="quantity" /><input type="button" value="+" id="plus"> &nbsp; &nbsp; <input type="submit" id="submit" value="Add to Cart" />
-            <label for="subtotal">Total: </label><input type="text" id="subtotal" name="subtotal" readonly>
-            <?php
-            echo "<input type = \"hidden\" name = \"productID\" value = \"$code\" readonly>";
-            ?>
+            <div class="atc"><label for="quantity">Quantity: </label><input class="plus-minus-button" type="button" value="-" id="minus"><input type="text" style="text-align:center;padding:2px;border:none;" size="5" name="quantity" id="quantity" /><input class="plus-minus-button" type="button" value="+" id="plus"></div>
+            <div class="atc"><label for="subtotal">Total: </label><input style="border: 2px solid #a0b284;border-radius:3px;box-sizing:border-box;" id="subtotal" name="subtotal" readonly></div>
+            <div class="atc"><input type="submit" id="submit" value="Add to Cart" />
+              <div>
+                <?php
+                echo "<input type = \"hidden\" name = \"productID\" value = \"$code\" readonly>";
+                ?>
           </form>
         </div>
       </div>
@@ -143,19 +136,21 @@ session_start();
       var x = price * parseInt(document.getElementById("quantity").value);
       document.getElementById("subtotal").value = "$" + x.toFixed(2);
     }
+
     function loadQuantity() {
       <?php
       if (isset($_SESSION["$code"])) {
         $quantity = $_SESSION["$code"];
         echo "document.getElementById(\"quantity\").value = $quantity";
       } else {
-        echo "document.getElementById(\"quantity\").value = 0";
+        echo "document.getElementById(\"quantity\").value = 1";
       }
       ?>
     }
+
   </script>
-  <script src = "productfunctions.js"></script>
-  <script src = "productlisteners.js"></script>
+  <script src="productfunctions.js"></script>
+  <script src="productlisteners.js"></script>
 </body>
 
 </html>
