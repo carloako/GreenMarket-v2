@@ -78,7 +78,7 @@
         <label for="quantity">Inventory stock:</label>
         <input type="text" required name="quantity" size="2" value = <?php echo $_POST["quantity"]; ?>><br>
         <label for="description">Description:</label><br>
-        <textarea required name="description" rows="8" cols="50"><?php echo $_POST["description"]; ?></textarea><br>
+        <textarea required id = "styled" name="description" rows="8" cols="50"><?php echo $_POST["description"]; ?></textarea><br>
         <input class="btn btn-primary" name="save" type="submit" value="Save">
       </form>
 
