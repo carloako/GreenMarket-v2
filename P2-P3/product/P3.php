@@ -1,6 +1,6 @@
 <?php
     $code = $_GET["productID"];
-    $xml = simplexml_load_file('../../database.xml');
+    $xml = simplexml_load_file('../../private/database.xml');
     $product = $xml->product;
     $name;
     $price;

@@ -42,6 +42,18 @@ table caption {
   margin-bottom: 2%;
 }
 
+.btn-to-link {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #b3c39c;
+    padding: 0;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.1em;
+}
+
 .edit-btn {
   color: #b3c39c;
   border-color: #b3c39c;
@@ -130,7 +142,7 @@ textarea#styled {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   table {
     border: 0;
   }
