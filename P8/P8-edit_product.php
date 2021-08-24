@@ -54,24 +54,32 @@
 <br/>
   <div style="margin-left:10%; margin-right:10%;">
     <div class="product-edit">
-      <h2>Edit a product</h2>
+      <h2 style="padding:0;">Edit a product</h2>
       <br>
-      <form class="" action="../P7/P7-product_list.html" method="post">
-        <label for="pimage">Upload a product photo:</label><br/><br/>
-        <label for="pimage" class="btn btn-primary">Choose file<br>
-        <input type="file" id="pimage" value=""></label><br><br>
-        <label for="pname">Product name:</label>
-        <input type="text" id="pname"><br>
-        <label for="pprice">Product price:</label>
-        <input type="text" id="pprice"><br>
-        <label for="sku">SKU:</label>
-        <input type="text" id="sku"><br>
-        <label for="qty">Inventory stock:</label>
-        <input type="text" id="qty"><br>
+
+      <form class="" action="add_product.php" method="POST" enctype="multipart/form-data">
+        <label for="image">Upload a product photo:</label><br/><br/>
+        <label for="image" class="btn btn-primary">Choose file<br>
+        <input type="file" id="image" name ="image" accept=".jpg, .jpeg, .png, .bmp, .gif" value=""></label><br><br>
+        <label for="category">Aisle:</label>
+        <select id="category" required name="category">
+            <option disabled selected hidden> - select one - </option>
+            <option value="beverages" <?php if($_POST["category"] == 'beverages'){echo("selected");}?>>Beverages</option>
+            <option value="fruits" <?php if($_POST["category"] == 'fruits'){echo("selected");}?>>Fruits</option>
+            <option value="meals" <?php if($_POST["category"] == 'meals'){echo("selected");}?>>Meals</option>
+            <option value="snacks" <?php if($_POST["category"] == 'snacks'){echo("selected");}?>>Snacks</option>
+            </select> <br><br>
+        <label for="id">Product ID:</label><br>
+        <input type="number" required name="id" size="5" value = <?php echo $_POST["id"]; ?>><br>
+        <label for="name">Product name:</label>
+        <input type="text" required name="name" size="5" value = <?php echo $_POST["name"]; ?>><br>
+        <label for="price">Product price:</label><br>
+        <input type="number" required name="price" min="0" placeholder="$ 0.00" step=".01" size="5" value = <?php echo $_POST["price"]; ?>><br>
+        <label for="quantity">Inventory stock:</label>
+        <input type="text" required name="quantity" size="2" value = <?php echo $_POST["quantity"]; ?>><br>
         <label for="description">Description:</label><br>
-        <textarea name="name" id="styled" rows="8" cols="50"></textarea><br>
-        <br>
-        <input class="btn btn-primary" onclick="redirectproductlist" type="submit" value="Save">
+        <textarea required id = "styled" name="description" rows="8" cols="50"><?php echo $_POST["description"]; ?></textarea><br>
+        <input class="btn btn-primary" name="save" type="submit" value="Save">
       </form>
 
     </div>
