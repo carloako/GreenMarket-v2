@@ -19,6 +19,7 @@ session_start();
 
 <body id="body">
   <header>
+
     <div class="header-1">
       <!-- facebook and instagram shortcut logos -->
       <div class="follow">
@@ -32,7 +33,7 @@ session_start();
       <a href="../../index.html" class="logo">
         <i class="fas fa-carrot" id="favicon"></i><img src="../../green_market-logo.png" id="market-name">
       </a>
-      <a href="../../P1/index.html" class="logo" id="title">
+      <a href="../../index.html" class="logo" id="title">
         <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
       </a>
 
@@ -44,7 +45,6 @@ session_start();
 
     <div class="nav">
       <!-- menu bars -->
-
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
@@ -54,10 +54,10 @@ session_start();
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="P2-P3/aisles.html">Aisles</a>
+                <a class="nav-link" href="../aisles.html">Aisles</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Deals</a>
@@ -67,15 +67,19 @@ session_start();
               </li>
             </ul>
           </div>
-          <span id="user-login"><a href="../../../P5/P5-login.html">Sign up</a></span>
-          <span id="shopping-cart"><a href="../../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
+          <span id="user-login"><a href="../../P5/P5-login.html">Sign up</a></span>
+          <span id="shopping-cart"><a href="../../P4/P4-shopping_cart.php" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
         </div>
       </nav>
     </div>
+
   </header>
   <div class="background">
     <div class="content">
-      <?php include "productphp.php" ?>
+
+      <!-- read xml in php -->
+      <?php include "P3.php" ?>
+
       <div class="row grid-container whitebg whole-bd">
         <div class="item1">
           <?php echo "<img src=\"../images/$picturename.jpg\" width=\"200\" height=\"200\"></br>"; ?>
@@ -92,12 +96,16 @@ session_start();
         </div>
         <div class="item3">
           <form action="put_in_cart.php" method="post">
-            <div class="atc"><label for="quantity">Quantity: </label><input class="plus-minus-button" type="button" value="-" id="minus"><input type="text" style="text-align:center;padding:2px;border:none;" size="5" name="quantity" id="quantity" /><input class="plus-minus-button" type="button" value="+" id="plus"></div>
-            <div class="atc"><label for="subtotal">Total: </label><input style="border: 2px solid #a0b284;border-radius:3px;box-sizing:border-box;" id="subtotal" name="subtotal" readonly></div>
-            <div class="atc"><input type="submit" id="submit" value="Add to Cart" />
-              <div>
+            <div class="atc"><label for="quantity">Quantity: </label>
+              <input class="plus-minus-button" type="button" value="-" id="minus">
+              <input type="text" style="text-align:center;padding:2px;border:none;" size="5" name="quantity" id="quantity" value="<?php echo "$quantity"; ?>" />
+              <input class="plus-minus-button" type="button" value="+" id="plus">
+            </div>
+            <div class="atc"><label for="subtotal">Total: </label><input type = "text" style="" id="subtotal" name="subtotal" value = "<?php printf("\$%.2f", $total) ?>" readonly></div>
+            <div class="atc"><input type="submit" id="submit" value="Add to Cart" /></div>
                 <?php
-                echo "<input type = \"hidden\" name = \"productID\" value = \"$code\" readonly>";
+                echo "<input type = \"hidden\" id = \"productID\" name = \"productID\" value = \"$code\" readonly>";
+                echo "<input type = \"hidden\" id = \"hidden-price\" name = \"hidden-price\" value = \"$price\" readonly>";
                 ?>
           </form>
         </div>
@@ -105,14 +113,13 @@ session_start();
     </div>
   </div>
   <!-- common footer section starts  -->
-
   <section class="footer">
     <div class="box-container">
       <div class="box">
         <p id="title-footer">Quick links</p>
-        <p><a href="../../../index.html">Home</a></p>
-        <p><a href="../about.html">About us</a></p>
-        <p><a href="../contact.html">Contact</a></p>
+        <p><a href="../../index.html">Home</a></p>
+        <p><a href="../../extra/about.html">About us</a></p>
+        <p><a href="../../extra/contact.html">Contact</a></p>
       </div>
 
       <div class="box">
@@ -130,27 +137,7 @@ session_start();
   </section>
   <!-- Install JavaScrip plugins and Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script>
-    function subtotalCalc() {
-      var price = <?php echo "$price"; ?>;
-      var x = price * parseInt(document.getElementById("quantity").value);
-      document.getElementById("subtotal").value = "$" + x.toFixed(2);
-    }
-
-    function loadQuantity() {
-      <?php
-      if (isset($_SESSION["$code"])) {
-        $quantity = $_SESSION["$code"];
-        echo "document.getElementById(\"quantity\").value = $quantity";
-      } else {
-        echo "document.getElementById(\"quantity\").value = 1";
-      }
-      ?>
-    }
-
-  </script>
-  <script src="productfunctions.js"></script>
-  <script src="productlisteners.js"></script>
+  <script src="P3.js"></script>
 </body>
 
 </html>

@@ -94,7 +94,7 @@ div.container {
 /* design of the footer specific to P5-P6 and P7-P12 */
 
 .footer {
-    position: absolute;
+    position: initial;
     bottom: 0;
     width: 100%;
   }

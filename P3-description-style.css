@@ -83,6 +83,7 @@ html, body{
 /* read more text */
 #more {
     display: none;
+    font-size: 1em;
 }
 /* product page title */
 .product-title{
@@ -97,11 +98,12 @@ html, body{
 }
 /* product description details */
 #description {
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    /* font-size: 25px; */
 }
 /* price */
 .description {
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 /* form with quantity and add to cart */
 .form {
@@ -137,6 +139,12 @@ input[type=submit]:hover {
     color: #f6f8f2;
     border-color: #b3c39c;
     background-color:#c5cfb6;
+}
+#subtotal {
+    border: none;
+}
+#subtotal:focus {
+    outline: none;
 }
 
 /* read more button */

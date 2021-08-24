@@ -68,12 +68,12 @@
     <id>321</id>
     <firstname>Jane</firstname>
     <lastname>Doe</lastname>
-    <email>jane.doe@mail.com</email>
+    <email>aaaa.a.as.asd@gmail.com</email>
     <password>hunter2</password>
     <address>address</address>
-    <city>city</city>
-    <postalcode>postalcode</postalcode>
-    <phonenumber>number</phonenumber>
+    <city>City</city>
+    <postalcode>A1B 2C3</postalcode>
+    <phonenumber>111 222 3333</phonenumber>
     <session/>
   </user>
   
