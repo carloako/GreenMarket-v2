@@ -19,4 +19,10 @@
         }
     }
     $picturename = strtolower($name);
+    if (isset($_SESSION["$code"])) {
+        $quantity = $_SESSION["$code"];
+      } else {
+        $quantity = 1;
+      }
+    $total = $price * $quantity;
 ?>

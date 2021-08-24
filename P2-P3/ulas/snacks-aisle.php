@@ -69,15 +69,15 @@
 							<a class="nav-link" href="../../P2-P3/aisles.html">Aisles</a>
 						</li>
 						<li class="nav-item">
-              <a class="nav-link" href="../../extra/deals.html">Deals</a>
+							<a class="nav-link" href="../../extra/deals.html">Deals</a>
 						</li>
 						<li class="nav-item">
-              <a class="nav-link" href="../../extra/services.html">Services</a>
+							<a class="nav-link" href="../../extra/services.html">Services</a>
 						</li>
 					</ul>
 					<div class="user-shopping">
 					<span id="shopping-cart">
-						<a href="../../P4/P4-shopping_cart.html" class="fas fa-shopping-cart"></a>
+						<a href="../../P4/P4-shopping_cart.php" class="fas fa-shopping-cart"></a>
 					</span>
 					<span id="user-login">
 						<a href="../../P5/P5-login.html" class="fas fa-user"></a>
@@ -90,76 +90,14 @@
     </header>
 
     <div class = "" style = "overflow:hidden; white-space:nowrap;margin:1%">
-			<h2>Beverages <hr style = "display:inline-block; width: 100%;"/></h2>
+			<h2>Snacks <hr style = "display:inline-block; width: 100%;"/></h2>
 		</div>
 		<div>
 			<div class = "aisle-box whitebg whole-bd">
-					<div class = "aisle-box-items" style = "align:left;">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/water.html">
-								<img src = "beverages_images/water-bottle.jpg" width = "250" height = "250"></br>
-								<h3>Bottled Water</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$1</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/orange.html">
-								<img src = "beverages_images/orange-juice.jpg" width = "250" height = "250"></br>
-								<h3>Orange Juice</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$2.50</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/milk.html">
-								<img src = "beverages_images/milk.jpg" width = "250" height = "250"></br>
-								<h3>Milk</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$3</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/tea.html">
-								<img src = "beverages_images/green-tea.jpg" width = "250" height = "250"></br>
-								<h3>Green Tea</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$4</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/smoothie.html">
-								<img src = "beverages_images/smoothie.jpg" width = "250" height = "250"></br>
-								<h3>Smoothies</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$7</p>
-						</div>
-					</div>
-					<div class = "aisle-box-items">
-						<div class = "aisle-box-items-contents">
-							<a class = "items" href = "beverages/wine.html">
-								<img src = "beverages_images/wine.jpg" width = "250" height = "250"></br>
-								<h3>Wine Bottle</h3>
-							</a>
-							<hr style = "width:250px;margin:0;"/>
-							<p class = "description">$15</p>
-						</div>
-					</div>
+				<?php include "aisle_items.php"?>
 			</div>
 		</div>
-
-
 <!-- common footer section starts  -->
-
 <section class="footer">
   <div class="box-container">
     <div class="box">
@@ -176,9 +114,8 @@
     </div>
   </div>
   <div>
-      <p><br/></p>
     <footer class="copyright">
-      <p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
+		<p>Concordia University, SOEN 287 Project © Team Green, 2021</p>
     </footer>
   </div>
 </section>

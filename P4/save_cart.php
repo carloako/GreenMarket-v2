@@ -13,8 +13,10 @@
         $_SESSION["$productID[$i]"] = $productq[$i];
     }
     $keys = array_keys($_SESSION);
+    // $post = array_keys($_POST);
+    print_r($_POST);
     foreach ($keys as $key){
-        if ($_POST["$key"] == "1"){
+        if (isset($_POST["$key"]) && $_POST["$key"] == "1"){
             unset($_SESSION["$key"]);
         }
     }

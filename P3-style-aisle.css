@@ -1,5 +1,9 @@
 /* This page deals with the "aisles" page design */
 
+html {
+    width:100%;
+}
+
 /* box */
 .aisle-box {
     background-color: white;

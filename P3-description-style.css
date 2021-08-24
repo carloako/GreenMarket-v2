@@ -8,7 +8,7 @@ html, body{
     background-color: white;
     height: 100%;
     margin:auto;
-    margin-bottom: 1%;
+    margin-top: 1%;
     margin-bottom: 1%;
     padding:1%;
     width:90%;
@@ -54,7 +54,7 @@ html, body{
 }
 @media only screen and (min-width: 650px){
     .grid-container {
-        width:60%;
+        width:80%;
     }
 }
 @media only screen and (min-width: 1184px){
@@ -83,6 +83,7 @@ html, body{
 /* read more text */
 #more {
     display: none;
+    font-size: 1em;
 }
 /* product page title */
 .product-title{
@@ -97,21 +98,34 @@ html, body{
 }
 /* product description details */
 #description {
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    /* font-size: 25px; */
 }
 /* price */
 .description {
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 /* form with quantity and add to cart */
 .form {
     margin-bottom: 5px;
 }
 /* input for quantity and total */
-input[type=number], input[type=text] {
+input[type=number] {
     border: 2px solid #a0b284;
     box-sizing: border-box;
     border-radius: 3px;
+}
+input[type=text] {
+    border: 2px solid #a0b284;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.plus-minus-button {
+    border: none;
+    border-radius: 3px;
+    background-color: #b3c39c;
+    color: white;
+    padding: 5px;
 }
 /* add to cart */
 input[type=submit]  {
@@ -126,6 +140,12 @@ input[type=submit]:hover {
     border-color: #b3c39c;
     background-color:#c5cfb6;
 }
+#subtotal {
+    border: none;
+}
+#subtotal:focus {
+    outline: none;
+}
 
 /* read more button */
 #readmore {
@@ -139,6 +159,10 @@ input[type=submit]:hover {
     color: #cbd6b9;
 }
 
+.atc {
+    padding-bottom:2px;
+    padding-top:2px;
+}
 #footer {
     /* position: absolute; */
     bottom: 0;

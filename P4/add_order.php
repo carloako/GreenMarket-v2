@@ -6,7 +6,7 @@
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('private/database.xml');
+        $xml = simplexml_load_file('../private/database.xml');
         $newcart = $xml->addChild("cart");
         $products = $xml->product;
         $keys = array_keys($_SESSION);

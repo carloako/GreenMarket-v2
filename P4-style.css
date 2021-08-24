@@ -42,9 +42,17 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+#scform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+}
 .overviewprice-box {
     margin: auto;
     width: 90%;
+    display: none;
 }
 #product {
     display:flex;
@@ -62,13 +70,51 @@ body{
     margin: 2px;
     color: white;
 }
+
 #payment:hover {
     background-color: #c5cfb6;
 }
 input[type=number] {
-    border: 2px solid #b3c39c;
-    box-sizing: border-box;
+    border:none;
     border-radius: 3px;
+    -moz-appearance: textfield;
+    text-align: center;
+    background-color: #f6f8f2;
+    width: 50px;
+}
+input[type=number]:focus {
+    outline:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.plus-minus-button {
+    border: none;
+    border-radius: 3px;
+    background-color: #b3c39c;
+    color: white;
+    padding: 5px;
+    width: 23px;
+}
+#btn-save-changes {
+    border: none;
+    border-radius: 3px;
+    background-color: #b3c39c;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    display: none;
+}
+.sc-empty{
+    font-size:xx-large;
+    color: #e61212;
+    display: none;
+    border: solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 @media only screen and (min-width:766px){
 .box-container-sc {

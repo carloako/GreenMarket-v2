@@ -1,7 +1,248 @@
-.backpage-box {
-    border: solid;
-    margin: 20pt;
-    padding: 1%;
-}
-.backpage-box p{
-}
+/* This page addresses the body design of the back end.
+
+Key differences between front and back end: Sidebar for navigation through the backend
+and also has a similar header as P5-P6 (but that isn't coded here since these pages
+will import the css from P5_P6-style.css) */
+
+
+body {
+    padding-bottom: 0;
+  }
+  html, body {
+      min-height: 100%;
+      width:100%;
+  }
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-left: 10%;
+    padding: 0;
+    width: 80%;
+    table-layout: fixed;
+    caption-side: top;
+  }
+  
+  table tr {
+    background-color: white;
+    border: 1px solid #cbd6b9;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+  }
+  
+  table caption {
+    font-size: 32px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .edit-btn {
+    color: #b3c39c;
+    border-color: #b3c39c;
+    background-color:#f6f8f2;
+  }
+  .edit-btn:hover {
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+    border-color: #c5cfb6;
+  }
+  .edit-btn:visited {
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+    border-color: #c5cfb6;
+  }
+  .payment-dropdown {
+    color: #b3c39c;
+    border-color: #b3c39c;
+    background-color:#f6f8f2;
+  }
+  .payment-dropdown-item a {
+    color: #b3c39c;
+    border-color: #b3c39c;
+    background-color:#f6f8f2;
+  }
+  
+  .btn-primary {
+    color: #b3c39c;
+    border-color: #b3c39c;
+    background-color:#f6f8f2;
+    size: 80%;
+    font-size: 18px;
+  }
+  .btn-primary:hover {
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+    border-color: #c5cfb6;
+  }
+  
+  /* sidebar navigation */
+  .sidenav {
+    height: 90%;
+    width: 160px;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 235px;
+    border-right: 2px;
+  }
+  /* sidebar menu links */
+  .sidenav a{
+    padding: 6px 8px 6px 16px;
+    font-size: 21px;
+    color: #f6f8f2;
+    display: block;
+  }
+  .sidenav-item:hover{
+    color: #f6f8f2;
+    background-color: #c5cfb6;
+  }
+  
+  
+  
+  /* main styling */
+  .main {
+    margin-left: 160px;
+    padding: 0px 10px;
+  }
+  
+  /* chose file styling */
+  input[type="file"] {
+    display: none;
+  }
+  
+  /* text area fixing */
+  textarea#styled {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cbd6b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+  
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+  
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+  
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+    }
+  
+    table td:last-child {
+      border-bottom: 0;
+    }
+  
+  }
+  
+  h1{
+    font-size: 200%;
+  }
+  h4{
+    font-size: 110%;
+  }
+  
+  .delete-icon{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+  }
+  
+  .product-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75px;
+  }
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    /* display: none; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* .dropdown:active .dropdown-content {display: block;} */
+  
+  /* .dropdown:active .dropbtn {background-color: #3e8e41;} */
+
+  @media screen and (max-width: 770px){
+      .sidenav {
+          display: none;
+      }
+      .main {
+          margin: 0;
+      }
+      .dropdown{
+          display:inline-block;
+      }
+  }
+  

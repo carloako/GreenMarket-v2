@@ -1,6 +1,6 @@
 <?php
     // session_start();
-    // header("Location: P9-user_list.php");
+    header("Location: ../P9/P9-user_list.php");
 ?>
 <!DOCTYPE html>
 <html>
