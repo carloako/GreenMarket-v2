@@ -11,7 +11,7 @@
             echo '<div class = "aisle-box-items-contents">';
             echo '<form id = "product_form" method = "get" action = "../product/product.php">';
             echo "<a class = 'items' href = 'javascript:{}' onclick = 'document.getElementsByTagName(\"form\")[$no].submit();'>";
-            echo "<img src = \"../images/$name.jpg\" width = \"200\" height = \"200\"></br>";
+            echo "<img src = \"../images/strtolower($name).jpg\" width = \"200\" height = \"200\"></br>";
             echo "<h3>$name</h3>";
             echo "<input type = \"hidden\" name = \"productID\" value = \"$pnumber\" readonly>";
             echo '</a>';
