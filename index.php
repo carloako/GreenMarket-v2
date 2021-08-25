@@ -133,8 +133,8 @@
 <div class="center-table whitebg whole-bd">
 	<div class="center-table-container">
 		<div class="center-table-items item-bottom-bd">
-			<a class="items" href="../P2-P3/john/fruits/strawberries.html">
-				<img src="../P2-P3/john/fruits_images/strawberries.jpg" width="200" height="300" class="item-images"></br>
+			<a class="items" href="/P2-P3/john/fruits/strawberries.html">
+				<img src="P2-P3/images/strawberries.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Strawberries</h3>
 			</a>
 			<div style="width:200px;margin:auto;">
@@ -144,7 +144,7 @@
 		</div>
 		<div class="center-table-items item-bottom-bd">
 			<a class="items" href="../P2-P3/john/fruits/melon.html">
-				<img src="../P2-P3/john/fruits_images/melons.jpg" width="200" height="300" class="item-images"></br>
+				<img src="P2-P3/images/melons.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Melons</h3>
 			</a>
 			<div style="width:200px;margin:auto;">
@@ -154,7 +154,7 @@
 		</div>
 		<div class="center-table-items item-bottom-bd">
 			<a class="items" href="../P2-P3/john/fruits/watermelon.html">
-				<img src="../P2-P3/john/fruits_images/watermelon.jpg" width="200" height="300" class="item-images"></br>
+				<img src="P2-P3/images/watermelon.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Watermelons</h3>
 			</a>
 			<div style="width:200px;margin:auto;">
@@ -164,7 +164,7 @@
 		</div>
 		<div class="center-table-items item-bottom-bd">
 			<a class="items" href="../P2-P3/john/fruits/mango.html">
-				<img src="../P2-P3/john/fruits_images/mango.jpg" width="200" height="300" class="item-images"></br>
+				<img src="P2-P3/images/mango.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Mangoes</h3>
 			</a>
 			<div style="width:200px;margin:auto;">
@@ -182,26 +182,26 @@
 <div class="center-table whitebg whole-bd">
 	<div class="center-table-container">
 		<div class="center-table-items item-bottom-bd">
-			<a class="items" href="../P2-P3/john/fruits.html">
+			<a class="items" href="P2-P3/john/fruits.php">
 				<img src="../P2-P3/aisles_images/fruits.jpg" width="200" height="300"
 					class="item-images"></br>
 				<h3 class="item-name">Fruits</h3>
 			</a>
 		</div>
 		<div class="center-table-items item-bottom-bd">
-			<a class="items" href="../P2-P3/francis/beverages.html">
+			<a class="items" href="P2-P3/francis/beverages.php">
 				<img src="../P2-P3/aisles_images/beverages.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Beverages</h3>
 			</a>
 		</div>
 		<div class="center-table-items item-bottom-bd">
-			<a class="items" href="../P2-P3/eve/prepared-meals.html">
+			<a class="items" href="P2-P3/eve/prepared-meals.php">
 				<img src="../P2-P3/aisles_images/meals.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Meals</h3>
 			</a>
 		</div>
 		<div class="center-table-items item-bottom-bd">
-			<a class="items" href="../P2-P3/ulas/snacks-aisle.html">
+			<a class="items" href="P2-P3/ulas/snacks-aisle.php">
 				<img src="../P2-P3/aisles_images/snacks.jpg" width="200" height="300" class="item-images"></br>
 				<h3 class="item-name">Snacks</h3>
 			</a>
