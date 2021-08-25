@@ -1,4 +1,4 @@
-<Files .htaccess>
+<Files .>
 Order Deny,Allow
 Deny From All
 Allow From 52.235.25.213 127.0.0.1
