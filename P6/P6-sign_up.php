@@ -92,7 +92,7 @@ if(isset($_POST['login'])) {
     <header>
       <div class="header-2">
         <!-- main logo and search bar -->
-        <a href="../index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
+        <a href="../index.php" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
         </a>
       </div>
     </header>

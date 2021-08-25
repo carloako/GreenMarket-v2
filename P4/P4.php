@@ -28,7 +28,7 @@ foreach ($keys as $key) {
     echo "</div>";
     echo "<div class=\"price\"><span>Price: </span> \$$price</div>";
     echo "<button type = \"submit\" name = \"$key\" class=\"btn dlt\" onclick = \"this.value = 1\">Delete item</button>";
-    echo "<a href=\"../index.html\" class=\"btn\">Continue shopping</a>";
+    echo "<a href=\"../index.php\" class=\"btn\">Continue shopping</a>";
     echo "</div>";
     $count++;
 }

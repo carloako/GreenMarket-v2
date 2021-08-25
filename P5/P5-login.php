@@ -52,7 +52,7 @@ $error = false;
     <header>
       <div class="header-2">
         <!-- main logo and search bar -->
-        <a href="../index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
+        <a href="../index.php" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
         </a>
       </div>
     </header>
@@ -93,7 +93,7 @@ $error = false;
           <a href="../extra/forgotpassword.html" style="font-size:80%; float: right;">Forgot your password?</a>
         </p>
         
-        <input type="signup" onclick="location.href='../index.html'" value="Log in" name="login">
+        <input type="signup" onclick="location.href='../index.php'" value="Log in" name="login">
       </div>
       
       <!-- create an account link -->
