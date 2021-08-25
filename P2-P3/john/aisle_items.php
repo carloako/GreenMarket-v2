@@ -5,7 +5,7 @@
         if ($product[$i]->attributes()->category == "fruits"){
             $name = $product[$i]->name;
             $price = $product[$i]->price;
-            $pnumber = $product[$i]->product_number;
+            $pnumber = $product[$i]->id;
             $no = $i + 1;
             echo '<div class = "aisle-box-items" style = "align:left;">';
             echo '<div class = "aisle-box-items-contents">';

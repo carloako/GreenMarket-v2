@@ -49,6 +49,12 @@ body{
     flex-wrap: wrap;
     width:100%;
 }
+/* .scform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
 .overviewprice-box {
     margin: auto;
     width: 90%;
@@ -133,4 +139,12 @@ input::-webkit-inner-spin-button {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    
+}
+#scform {
+    /* display: flex important!;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* width:100%; */
 }}

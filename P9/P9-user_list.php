@@ -29,15 +29,15 @@
         <button class="dropbtn" id="dropbtn">Menu</button>
         <div class="dropdown-content" id="dropdown-content">
           <a href="../P7/P7-product_list.html">Product List</a>
-          <a href="../P9/P9-user_list.html">User List</a>
-          <a href="../P11/P11-order_list.html">Order List</a>
+          <a href="../P9/P9-user_list.php">User List</a>
+          <a href="../P11/P11-order_list.php">Order List</a>
         </div>
       </div>
       <!--sidebar-->
       <div class="sidenav">
         <a href="../P7/P7-product_list.html" class="sidenav-item">Product List</a>
-        <a href="../P9/P9-user_list.html" class="sidenav-item">User List</a>
-        <a href="../P11/P11-order_list.html" class="sidenav-item">Order List</a>
+        <a href="../P9/P9-user_list.php" class="sidenav-item">User List</a>
+        <a href="../P11/P11-order_list.php" class="sidenav-item">Order List</a>
       </div>
 
       <!--main-->
@@ -58,7 +58,7 @@
                 </thead>
                 <tbody>
                   <?php
-                  $xml = simplexml_load_file('../database.xml');
+                  $xml = simplexml_load_file('../private/database.xml');
                   $users = $xml->user;
 
                   foreach ($users as $user) {
@@ -72,6 +72,8 @@
                     echo "</form>";
                     echo "</tr>";
                   }
+                  // include '../private/update-db.php';
+                  // updateDatabase();
                   ?>
                 </tbody>
               </table>

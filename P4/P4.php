@@ -1,5 +1,5 @@
 <?php
-$xml = simplexml_load_file('../database.xml');
+$xml = simplexml_load_file('../private/database.xml');
 $products = $xml->product;
 $keys = array_keys($_SESSION);
 $count = 0;
@@ -7,7 +7,7 @@ foreach ($keys as $key) {
     $name;
     $quantity;
     foreach ($products as $product) {
-        if ($product->product_number == $key) {
+        if ($product->id == $key) {
             $name = $product->name;
             $price = $product->price;
             break;

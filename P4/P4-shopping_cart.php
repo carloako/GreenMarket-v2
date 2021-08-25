@@ -88,7 +88,7 @@ session_start();
       <section class="product" id="product">
         <div class="box-container-sc">
           <p class="sc-empty" id="sc-empty-text">Shopping cart empty!</p>
-          <form id="scform" method="post" action="save_cart.php">
+          <form id="scform" class = "scform" style = "display:block;" method="post" action="save_cart.php">
 
             <!-- read cart -->
             <?php include "P4.php" ?>

@@ -6,7 +6,7 @@
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('../database.xml');
+        $xml = simplexml_load_file('../private/database.xml');
         $orders = $xml->order;
         $targetID= $_POST["id"];
         foreach($orders as $order){
@@ -16,7 +16,7 @@
                 break;
             }
         }
-        $xml->asXML('../database.xml');
+        $xml->asXML('../private/database.xml');
     ?>
 </body>
 </html>

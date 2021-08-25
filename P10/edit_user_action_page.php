@@ -7,7 +7,7 @@ header("Location: ../P9/P9-user_list.php");
 
 <body>
     <?php
-    $xml = simplexml_load_file('../database.xml');
+    $xml = simplexml_load_file('../private/database.xml');
     $targetID = $_POST["id"];
     $users = $xml->user;
     // echo count($users);
@@ -65,7 +65,7 @@ header("Location: ../P9/P9-user_list.php");
         $newuser->addChild("postalcode", $_POST["postal-code"]);
         $newuser->addChild("phonenumber", $_POST["phone-number"]);
     }
-    $xml->asXML('../database.xml');
+    $xml->asXML('../private/database.xml');
     ?>
 </body>
 
