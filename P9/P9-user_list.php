@@ -72,8 +72,6 @@
                     echo "</form>";
                     echo "</tr>";
                   }
-                  // include '../private/update-db.php';
-                  // updateDatabase();
                   ?>
                 </tbody>
               </table>

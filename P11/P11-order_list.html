@@ -67,7 +67,24 @@
       </tr>
     </thead>
     <tbody>
+      <?php
+                  $xml = simplexml_load_file('../database.xml');
+                  $users = $xml->user;
 
+                  foreach ($users as $user) {
+                    echo "<tr>";
+                    echo "<form action = \"delete_user_action.php\" method = \"post\">";
+                    echo "<td data-label = \"First Name\">$user->firstname</td>";
+                    echo "<td data-label = \"Last Name\">$user->lastname</td>";
+                    echo "<td data-label = \"Email Address\" style = \"white-space:nowrap;overflow:hidden;text-overflow:ellipsis;\">$user->email</td>";
+                    echo "<td data-label=\"Action\"><input type = \"submit\" class = \"edit-button\" value = \"Edit\" formaction = \"../P10/P10-edit_user.php\" style = \"\" name = \"edit-button\"><input type = \"hidden\" value = \"$user->email\" name = \"email\"></td>";
+                    echo "<td data-label=\"Delete\"><input class = \"delete-icon\" type = \"image\" src = \"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png\" id = \"\" value = \"\" name = \"delete-button\"></td>";
+                    echo "</form>";
+                    echo "</tr>";
+                  }
+                  // include '../private/update-db.php';
+                  // updateDatabase();
+                  ?>
       <tr>
         <td data-label="Order #">12345</td>
         <td data-label="User">john.shopper@gmail.com</td>
