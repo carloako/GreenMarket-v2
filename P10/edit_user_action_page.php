@@ -1,17 +1,21 @@
 <?php
-    // session_start();
-    header("Location: ../P9/P9-user_list.php");
+// session_start();
+header("Location: ../P9/P9-user_list.php");
 ?>
 <!DOCTYPE html>
 <html>
+
 <body>
     <?php
-        $xml = simplexml_load_file('private/database.xml');
-        $targetID= $_POST["id"];
-        $users = $xml->user;
-        if ($targetID !== ""){
-            foreach($users as $user){
-                if ($targetID == $user->id){
+    $xml = simplexml_load_file('../database.xml');
+    $targetID = $_POST["id"];
+    $users = $xml->user;
+    // echo count($users);
+    // echo ($users == "");
+    if (count($users) > 0) {
+        if ($targetID !== "") {
+            foreach ($users as $user) {
+                if ($targetID == $user->id) {
                     $user->email = $_POST["e-mail"];
                     $user->password = $_POST["password"];
                     $user->firstname = $_POST["first-name"];
@@ -23,34 +27,46 @@
                     break;
                 }
             }
-        }
-        else {
+        } else {
             $checkidexists = true;
             $newid;
-            while ($checkidexists){
+            while ($checkidexists) {
                 $newid = rand(100,999);
-                foreach($users as $user){
-                    if ($newid == $user->id){
+                foreach ($users as $user) {
+                    if ($newid == $user->id) {
                         $checkidexists = true;
                         break;
-                    }
-                    else {
+                    } else {
                         $checkidexists = false;
                     }
                 }
             }
             $newuser = $xml->addChild("user");
-            $newuser->addChild("id",$newid);
-            $newuser->addChild("email",$_POST["e-mail"]);
-            $newuser->addChild("password",$_POST["password"]);
-            $newuser->addChild("firstname",$_POST["first-name"]);
-            $newuser->addChild("lastname",$_POST["last-name"]);
-            $newuser->addChild("address",$_POST["home-address"]);
-            $newuser->addChild("city",$_POST["city"]);
-            $newuser->addChild("postalcode",$_POST["postal-code"]);
-            $newuser->addChild("phonenumber",$_POST["phone-number"]);
+            $newuser->addChild("id", $newid);
+            $newuser->addChild("email", $_POST["e-mail"]);
+            $newuser->addChild("password", $_POST["password"]);
+            $newuser->addChild("firstname", $_POST["first-name"]);
+            $newuser->addChild("lastname", $_POST["last-name"]);
+            $newuser->addChild("address", $_POST["home-address"]);
+            $newuser->addChild("city", $_POST["city"]);
+            $newuser->addChild("postalcode", $_POST["postal-code"]);
+            $newuser->addChild("phonenumber", $_POST["phone-number"]);
         }
-        $xml->asXML('private/database.xml');
+    } else {
+        $newuser = $xml->addChild("user");
+        $newid = rand(100,999);
+        $newuser->addChild("id", $newid);
+        $newuser->addChild("email", $_POST["e-mail"]);
+        $newuser->addChild("password", $_POST["password"]);
+        $newuser->addChild("firstname", $_POST["first-name"]);
+        $newuser->addChild("lastname", $_POST["last-name"]);
+        $newuser->addChild("address", $_POST["home-address"]);
+        $newuser->addChild("city", $_POST["city"]);
+        $newuser->addChild("postalcode", $_POST["postal-code"]);
+        $newuser->addChild("phonenumber", $_POST["phone-number"]);
+    }
+    $xml->asXML('../database.xml');
     ?>
 </body>
+
 </html>
