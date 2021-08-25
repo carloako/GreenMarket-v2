@@ -11,7 +11,7 @@
     <!-- Custom Stylesheets -->
     <link href="../stylesheet.css" rel="stylesheet" />
     <link href="../P5_P6-style.css" rel="stylesheet" />
-    <link href="../P7_P12-style.css" rel="stylesheet" />
+    <link href="../P9-style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,6 +30,15 @@
                 Successfully deleted order.
             </div>
             <div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropbtn">Menu</button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="../P7/P7-product_list.html">Product List</a>
+                        <a href="../P9/P9-user_list.php">User List</a>
+                        <a href="../P11/P11-order_list.php">Order List</a>
+                    </div>
+                </div>
 
                 <!--sidebar-->
                 <div class="sidenav">
@@ -59,10 +68,10 @@
 
                             foreach ($orders as $order) {
                                 echo "<tr>";
-                                echo "<form action = \"delete_order.php\" method = \"post\">";
+                                echo "<form action = \"delete_order.php\" method = \"post\" >";
                                 echo "<td data-label= \"Order #\">$order->ordernumber</td>";
-                                echo "<td data-label=\"User\">$order->email</td>";
-                                echo "<td data-label=\"Action\"><input type = \"submit\" class = \"edit-button\" value = \"Edit\" formaction = \"../P12/P12-edit_order.php\" style = \"\" name = \"edit-button\"><input type = \"hidden\" value = \"$order->id\" name = \"id\"></td>";
+                                echo "<td data-label=\"User\" style = \"white-space:nowrap;overflow:hidden;text-overflow:ellipsis;\">$order->email</td>";
+                                echo "<td data-label=\"Action\"><input type = \"submit\" class = \"edit-button\" value = \"Edit\" formaction = \"../P12/P12-edit_order.php\" style = \"\" name = \"edit-button\"><input type = \"hidden\" value = \"$order->id\" name = \"id\" ></td>";
                                 echo "<td data-label=\"Delete\"><input class = \"delete-icon\" type = \"image\" src = \"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/wastebasket_1f5d1.png\" id = \"\" value = \"\" name = \"delete-button\"></td>";
                                 echo "</form>";
                                 echo "</tr>";
@@ -105,6 +114,18 @@
             <script src="P11-order_list.js"></script>
             <!-- Install JavaScrip plugins and Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script>
+                function showMenu() {
+                    var content = document.getElementById("dropdown-content");
+                    if (content.style.display == "none") {
+                        content.style.display = "block";
+                    } else {
+                        content.style.display = "none";
+                    }
+                }
+                document.getElementById("dropbtn").onclick = showMenu;
+                // document.getElementById("dropdown-content").onblur = function() {document.getElementById("dropdown-content").style.display = "none";};
+            </script>
 </body>
 
 </html>

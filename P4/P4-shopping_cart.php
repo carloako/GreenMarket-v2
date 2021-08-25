@@ -73,7 +73,7 @@ session_start();
                 </ul>
               </div>
               <span id="shopping-cart"><a href="P4-shopping_cart.php" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-              <span id="user-login"><a href="../P5/P5-login.html" class="fas fa-user"></a></span>
+              <span id="user-login"><a href="../P5/P5-login.php" class="fas fa-user"></a></span>
             </div>
           </nav>
         </div>
@@ -126,8 +126,8 @@ session_start();
 
         <div class="box">
           <p id="title-footer">Follow us:</p>
-          <p><a href="../https://facebook.com" id="link">Facebook</a></p>
-          <p><a href="../https://instagram.com" id="link">Instagram</a></p>
+          <p><a href="https://facebook.com" id="link">Facebook</a></p>
+          <p><a href="https://instagram.com" id="link">Instagram</a></p>
         </div>
       </div>
       <footer class="copyright">
