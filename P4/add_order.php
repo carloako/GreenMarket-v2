@@ -22,7 +22,7 @@
             }
             $newcart->addChild(strtolower($productname),$_SESSION["$key"]);
         }
-        $xml->asXML('private/database.xml');
+        $xml->asXML('../private/database.xml');
     ?>
 </body>
 </html>
