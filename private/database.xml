@@ -110,7 +110,7 @@ Amount: 500ml</description>
 Amount: 500ml x 3</description>
   </product>
   <product category="beverages">
-    <id>15</id>
+    <id>015</id>
     <name>Wine</name>
     <price>15.00</price>
     <quantity>25</quantity>
