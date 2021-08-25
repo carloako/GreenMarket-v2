@@ -13,29 +13,32 @@ if(isset($_POST['login'])) {
   if(file_exists('users/' . $username . 'xml')) {
     $errors[] = 'The username already exists.';
   }
+  if($username == '') {
+    $errors[] = 'Please enter a username.';
+  }
   if($email == '') {
-    $error[] = 'Please enter your e-mail address.'
+    $errors[] = 'Please enter your e-mail address.';
   }
   if($password == '' || $repeatpassword == '') {
-    $error[] = 'Please enter your password twice';
+    $errors[] = 'Please enter your password twice';
   }
   if($password != $repeatpassword) {
-    $error[] = 'The passwords do not match';
+    $errors[] = 'The passwords do not match';
   }
   if($firstname == '') {
-    $error[] = 'Please enter your first name.';
+    $errors[] = 'Please enter your first name.';
   }
   if($lastname == '') {
-    $error[] = 'Please enter your last name.';
+    $errors[] = 'Please enter your last name.';
   }
   if($homeaddress == '') {
-    $error[] = 'Please enter your adress.';
+    $errors[] = 'Please enter your adress.';
   }
   if($city == '') {
-    $error[] = 'Please enter your city.';
+    $errors[] = 'Please enter your city.';
   }
   if($postalcode == '') {
-    $error[] = 'Please enter your postal code.';
+    $errors[] = 'Please enter your postal code.';
   }
   if(count($errors) == 0) {
     $xml = new SimpleXMLElement('<user></user');
@@ -46,8 +49,8 @@ if(isset($_POST['login'])) {
     $xml->addChild('homeaddress', $homeaddress);
     $xml->addChild('city', $city);
     $xml->addChild('postalcode', $postalcode);
-    $xmml->adXML('users'/ . $usrname. '.xml.');
-    header(Location: index.php);
+    $xmml->adXML('users/' . $username . '.xml.');
+    header('Location: index.php');
     die;
   }
 }
@@ -97,7 +100,15 @@ if(isset($_POST['login'])) {
 <p><br/></p>
 
 <h2>Sign up</h2>
-    <form action="signup_page.php" style="border: 1px">
+    <form method="post" action="" style="border: 1px">
+    <?php
+    if(count($errors) > 0) {
+      echo '<ul>';
+      foreach($errors as $e) {
+        echo '<li>' . $e . '</li>';
+      }
+    }
+    ?>
       <div class="container">
         <input
           class="btn btn-outline-secondary btn-small"
