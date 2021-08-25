@@ -209,7 +209,7 @@ body {
   
   .dropdown {
     position: relative;
-    /* display: none; */
+    display: none;
   }
   
   .dropdown-content {

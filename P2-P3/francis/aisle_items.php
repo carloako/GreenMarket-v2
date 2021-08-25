@@ -4,7 +4,7 @@
     $no = 1;
     for($i = 0; $i < count($product);$i++){
         if ($product[$i]->attributes()->category == "beverages"){
-            $name = $product[$i]->name;
+            $name = strtolower($product[$i]->name);
             $price = $product[$i]->price;
             $pnumber = $product[$i]->id;
             echo '<div class = "aisle-box-items" style = "align:left;">';

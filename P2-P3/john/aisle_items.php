@@ -3,7 +3,7 @@
     $product = $xml->product;
     for($i = 0; $i < count($product);$i++){
         if ($product[$i]->attributes()->category == "fruits"){
-            $name = $product[$i]->name;
+            $name = strtolower($product[$i]->name);
             $price = $product[$i]->price;
             $pnumber = $product[$i]->id;
             $no = $i + 1;
