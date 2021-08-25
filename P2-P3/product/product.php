@@ -31,10 +31,10 @@ session_start();
 
     <div class="header-2">
       <!-- main carrot logo and search bar -->
-      <a href="../../index.html" class="logo">
+      <a href="../../index.php" class="logo">
         <i class="fas fa-carrot" id="favicon"></i><img src="../../green_market-logo.png" id="market-name">
       </a>
-      <a href="../../index.html" class="logo" id="title">
+      <a href="../../index.php" class="logo" id="title">
         <i class="fas fa-carrot" id="favicon"></i>Concordia U. Green Market
       </a>
 
@@ -55,7 +55,7 @@ session_start();
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../aisles.html">Aisles</a>
@@ -118,7 +118,7 @@ session_start();
     <div class="box-container">
       <div class="box">
         <p id="title-footer">Quick links</p>
-        <p><a href="../../index.html">Home</a></p>
+        <p><a href="../../index.php">Home</a></p>
         <p><a href="../../extra/about.html">About us</a></p>
         <p><a href="../../extra/contact.html">Contact</a></p>
       </div>
