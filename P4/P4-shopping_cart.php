@@ -98,7 +98,7 @@ session_start();
         </div>
         <div class="overviewprice-box" id="overviewprice-box">
           <div class="overviewprice">
-            <form id="form-payment" action="add_order.php" method="post">
+            <form id="form-payment" action="" method="">
               <p><b>Total(w/o tax):</b> <span id="totalwotax"></span></p>
               <p><b>GST/HST:</b> <span id="gst"></span></p>
               <hr />
