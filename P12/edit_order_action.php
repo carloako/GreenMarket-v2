@@ -7,12 +7,14 @@ header("Location: ../P11/P11-order_list.php");
 
 <body>
     <?php
-    $xml = simplexml_load_file('../database.xml');
+    $xml = simplexml_load_file('../private/database.xml');
     $targetID = $_POST["id"];
     $orders = $xml->order;
     // echo ($users == "");
     if (count($orders) > 0) {
+        echo"true";
         if ($targetID !== "") {
+            echo "true";
             foreach ($orders as $order) {
                 if ($targetID == $order->id) {
                     $order->ordernumber = $_POST["ordernumber"];
@@ -23,6 +25,7 @@ header("Location: ../P11/P11-order_list.php");
                 }
             }
         } else {
+            echo "false";
             $checkidexists = true;
             $newid;
             while ($checkidexists) {
@@ -52,7 +55,7 @@ header("Location: ../P11/P11-order_list.php");
         $neworder->addChild("address", $_POST["address"]);
         $neworder->addChild("paymentmethod", $_POST["paymentmethod"]);
     }
-    $xml->asXML('../database.xml');
+    $xml->asXML('../private/database.xml');
     ?>
 </body>
 

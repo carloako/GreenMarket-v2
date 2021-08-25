@@ -6,7 +6,7 @@
 <html>
 <body>
     <?php
-        $xml = simplexml_load_file('../database.xml');
+        $xml = simplexml_load_file('../private/database.xml');
         $users = $xml->user;
         $targetEmail= $_POST["email"];
         echo "$targetEmail";
@@ -17,7 +17,7 @@
                 break;
             }
         }
-        $xml->asXML('../database.xml');
+        $xml->asXML('../private/database.xml');
     ?>
 </body>
 </html>

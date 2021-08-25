@@ -9,7 +9,7 @@
     $desc2;
     $picturename;
     for ($i = 0; $i <= count($product); $i++){
-        if ($code == $product[$i]->product_number && $product[$i]->type == 'fruit'){
+        if ($code == $product[$i]->id && ($product[$i]->attributes()->category == "fruits" || $product[$i]->attributes()->category == "beverages" || $product[$i]->attributes()->category == "snacks" || $product[$i]->attributes()->category == "meals")){
             $name = $product[$i]->name;
             $price = $product[$i]->price;
             $stringdesc = $product[$i]->description;
