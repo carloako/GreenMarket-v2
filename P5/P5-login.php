@@ -1,5 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$error = false;
+  if(isset($_POST['login'])) {
+    $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
+    $password = md5($_POST['password']);
+    if(file_exists('users/' . $username . 'xml')) {
+      $xml = new SimpleXMLElement('users/' . $username . '.xml', 0, true);
+      if($password == $xml->password) {
+        session_start();
+        $_SESSION['username'] = $username;
+        header('Location: index.php');
+        die;
+      }
+    }
+    $error = true;
+  }
+?>
+
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Green Market</title>
     <meta
@@ -46,14 +65,14 @@
 
 <h2>User Login page</h2>
 <!-- login box part -->
-    <form action="login_page.php" style="border: 1px">
+    <form method="post" action="" style="border: 1px">
       <div class="container">
-        <label for="e-mail"><b>E-mail</b></label>
+        <label for="username"><b>Username</b></label>
         <input
           type="text"
-          placeholder="Enter e-mail"
-          name="e-mail"
-          id="e-mail"
+          placeholder="Enter username"
+          name="username"
+          id="username"
           required
         />
 
@@ -66,17 +85,22 @@
           required
         />
         <p>
+          <?php
+          if($error) {
+            echo'<p>Invalid username and/or password.</p>';
+          }
+          ?>
           <a href="../extra/forgotpassword.html" style="font-size:80%; float: right;">Forgot your password?</a>
         </p>
         
-        <input type="signup" onclick="location.href='../index.html'" value="Log in">
+        <input type="signup" onclick="location.href='../index.html'" value="Log in" name="login">
       </div>
       
       <!-- create an account link -->
       <div class="container signin">
         <p style="font-size:90%;">
           Not a member yet?
-          <a href="../P6/P6-sign_up.html" id="signin"> Create an account</a>
+          <a href="../P6/P6-sign_up.php" id="signin"> Create an account</a>
        </p>
       </div>
     </form>

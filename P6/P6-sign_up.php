@@ -1,7 +1,61 @@
-<!-- SOEN287 EVE GAGNON, 40063888, P6 SIGN UP PAGE -->
+<?php
+$errors = array();
+if(isset($_POST['login'])) {
+  $email = $_POST['email'];
+  $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
+  $password = $_POST['password'];
+  $repeatpassword = $_POST['repeatpassword'];
+  $firstname = $_POST['firstname'];
+  $lastname = $_POST['lastname'];
+  $homeaddress = $_POST['homeaddress'];
+  $city = $_POST['city'];
+  $postalcode = $_POST['postalcode'];
+  if(file_exists('users/' . $username . 'xml')) {
+    $errors[] = 'The username already exists.';
+  }
+  if($email == '') {
+    $error[] = 'Please enter your e-mail address.'
+  }
+  if($password == '' || $repeatpassword == '') {
+    $error[] = 'Please enter your password twice';
+  }
+  if($password != $repeatpassword) {
+    $error[] = 'The passwords do not match';
+  }
+  if($firstname == '') {
+    $error[] = 'Please enter your first name.';
+  }
+  if($lastname == '') {
+    $error[] = 'Please enter your last name.';
+  }
+  if($homeaddress == '') {
+    $error[] = 'Please enter your adress.';
+  }
+  if($city == '') {
+    $error[] = 'Please enter your city.';
+  }
+  if($postalcode == '') {
+    $error[] = 'Please enter your postal code.';
+  }
+  if(count($errors) == 0) {
+    $xml = new SimpleXMLElement('<user></user');
+    $xml->addChild('email', $email);
+    $xml->addChild('password', md5($password));
+    $xml->addChild('firstname', $firstname);
+    $xml->addChild('lastname', $lastname);
+    $xml->addChild('homeaddress', $homeaddress);
+    $xml->addChild('city', $city);
+    $xml->addChild('postalcode', $postalcode);
+    $xmml->adXML('users'/ . $usrname. '.xml.');
+    header(Location: index.php);
+    die;
+  }
+}
+?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Green Market</title>
     <meta
@@ -57,27 +111,36 @@
         <input
           type="text"
           placeholder="Enter e-mail"
-          name="e-mail"
-          id="e-mail"
+          name="email"
+          id="email"
+          required
+        />
+
+        <label for="username"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter username"
+          name="username"
+          id="username"
           required
         />
 
         <label for="Password"><b>Password (8 characters minimum)</b></label>
         <input
-          type="text"
+          type="password"
           placeholder="Enter password"
-          name="Password"
-          id="Password"
+          name="password"
+          id="password"
           minlength="8"
           required
         />
 
         <label for="Repeat-password"><b>Repeat password</b></label>
         <input
-          type="text"
+          type="password"
           placeholder="Repeat password"
-          name="Repeat-password"
-          id="Repear-password"
+          name="repeatpassword"
+          id="repeatpassword"
           required
         />
         <hr />
@@ -87,8 +150,8 @@
         <input
           type="text"
           placeholder="Enter your first name"
-          name="first-name"
-          id="first-name"
+          name="firstname"
+          id="firstname"
           required
         />
 
@@ -96,8 +159,8 @@
         <input
           type="text"
           placeholder="Enter your last name"
-          name="last-name"
-          id="last-name"
+          name="lastname"
+          id="lastname"
           required
         />
 
@@ -105,8 +168,8 @@
         <input
           type="text"
           placeholder="Enter your address"
-          name="Home-address"
-          id="Home-address"
+          name="homeaddress"
+          id="homeaddress"
           required
         />
 
@@ -114,8 +177,8 @@
         <input
           type="text"
           placeholder="Enter your city"
-          name="City"
-          id="City"
+          name="city"
+          id="city"
           required
         />
 
@@ -123,8 +186,8 @@
         <input
           type="text"
           placeholder="Enter your postal code"
-          name="Postal-code"
-          id="Postal-code"
+          name="postalcode"
+          id="postalcode"
           required
         />
         <p><br /></p>
