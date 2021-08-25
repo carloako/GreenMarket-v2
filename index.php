@@ -1,4 +1,1 @@
-<?php 
-session_start();
-if(!file_exists('users'))
-?>
+<?php header( 'Location: /index.html' ) ;  ?>
