@@ -1,97 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Grocery>
-  <user>
-    <id>321</id>
-    <firstname>Jane</firstname>
-    <lastname>Doe</lastname>
-    <email>jane.doe@mail.com</email>
-    <password>hunter2</password>
-    <address>address</address>
-    <city>city</city>
-    <postalcode>postalcode</postalcode>
-    <phonenumber>number</phonenumber>
-    <session/>
-  </user>
-  <user>
-    <id>473</id>
-    <email>a</email>
-    <password>a</password>
-    <firstname>a</firstname>
-    <lastname>a</lastname>
-    <address>a</address>
-    <city>a</city>
-    <postalcode>a</postalcode>
-    <phonenumber>a</phonenumber>
-  </user>
+  
+  
   <cart>
     <session>1</session>
     <banana>5</banana>
   </cart>
   <product category="fruits">
-    <id>1</id>
+    <id>001</id>
     <name>Banana</name>
     <price>10</price>
     <quantity>50</quantity>
     <description>Our bananas came from the best green jungles. It is gathered and safely as well. It is full of potassiom and very good for the human body.</description>
   </product>
   <product category="fruits">
-    <id>2</id>
+    <id>002</id>
     <name>Raspberries</name>
     <price>3.50</price>
     <quantity>100</quantity>
     <description>Our raspberries came only from the best farms. It is very sweet and full of vitamin C, iron and antioxidants. It is recommended to eat it with jams or ice cream.</description>
   </product>
   <product category="fruits">
-    <id>3</id>
+    <id>003</id>
     <name>Avocado</name>
     <price>5</price>
     <quantity>35</quantity>
     <description>It's recently picked. It is very fresh and ripe produced only on the best farms. It is creamy and very nutritious.</description>
   </product>
   <product category="fruits">
-    <id>4</id>
+    <id>004</id>
     <name>Grapes</name>
     <price>4</price>
     <quantity>67</quantity>
     <description>This sweet and juicy grapes is just the dessert that you might be looking for. It is very nutritious and keeps the human body healthy.</description>
   </product>
   <product category="fruits">
-    <id>5</id>
+    <id>005</id>
     <name>Lime</name>
     <price>4.23</price>
     <quantity>97</quantity>
     <description>Our sour lime is the best to mix with drinks and liquor for the best tasting.</description>
   </product>
   <product category="fruits">
-    <id>6</id>
+    <id>006</id>
     <name>Strawberries</name>
     <price>5</price>
     <quantity>137</quantity>
     <description>This low-hanging fruit that we offer is sweet and and tasty. It is gathered and produced in the best farms where growing strawberries is suitable and sustainable.</description>
   </product>
   <product category="fruits">
-    <id>7</id>
+    <id>007</id>
     <name>Melons</name>
     <price>4.99</price>
     <quantity>150</quantity>
     <description>We offer the sweetest and the juiciest melon from the cheapest but the best farm. It is gathered sustainably and safely.</description>
   </product>
   <product category="fruits">
-    <id>8</id>
+    <id>008</id>
     <name>Watermelon</name>
     <price>6.99</price>
     <quantity>70</quantity>
     <description>Our watermelon that came from only the most prestigious of farms not only will sate your hunger but will also quench your thirst.</description>
   </product>
   <product category="fruits">
-    <id>9</id>
+    <id>009</id>
     <name>Mango</name>
     <price>3.99</price>
     <quantity>500</quantity>
     <description>The sweetest mango you can taste.</description>
   </product>
   <product category="beverages">
-    <id>1</id>
+    <id>010</id>
     <name>Water</name>
     <price>1</price>
     <quantity>300</quantity>
@@ -99,7 +78,7 @@
 Amount: 500ml</description>
   </product>
   <product category="beverages">
-    <id>2</id>
+    <id>011</id>
     <name>Juice</name>
     <price>2.50</price>
     <quantity>100</quantity>
@@ -107,7 +86,7 @@ Amount: 500ml</description>
 Amount: 500ml</description>
   </product>
   <product category="">
-    <id>3</id>
+    <id>012</id>
     <name>Milk</name>
     <price>3.00</price>
     <quantity>57</quantity>
@@ -115,7 +94,7 @@ Amount: 500ml</description>
 Amount: 1L</description>
   </product>
   <product category="beverages">
-    <id>4</id>
+    <id>013</id>
     <name>Tea</name>
     <price>3.00</price>
     <quantity>50</quantity>
@@ -123,7 +102,7 @@ Amount: 1L</description>
 Amount: 500ml</description>
   </product>
   <product category="beverages">
-    <id>5</id>
+    <id>014</id>
     <name>Smoothies</name>
     <price>7.00</price>
     <quantity>37</quantity>
@@ -131,7 +110,7 @@ Amount: 500ml</description>
 Amount: 500ml x 3</description>
   </product>
   <product category="beverages">
-    <id>6</id>
+    <id>015</id>
     <name>Wine</name>
     <price>15.00</price>
     <quantity>25</quantity>
@@ -139,87 +118,87 @@ Amount: 500ml x 3</description>
 Amount: 750ml</description>
   </product>
   <product category="meals">
-    <id>1</id>
+    <id>016</id>
     <name>Pasta Bowl</name>
     <price>7.99</price>
     <quantity>35</quantity>
     <description>A bowl of pasta topped with tomatoes and basil.</description>
   </product>
   <product category="meals">
-    <id>2</id>
+    <id>017</id>
     <name>Tuna Salad</name>
     <price>5.50</price>
     <quantity>60</quantity>
     <description>A tuna salad with eggs and herbs.</description>
   </product>
   <product category="meals">
-    <id>3</id>
+    <id>018</id>
     <name>Squash Soup</name>
     <price>6.99</price>
     <quantity>37</quantity>
     <description>Squash soup topped with cream.</description>
   </product>
   <product category="meals">
-    <id>4</id>
+    <id>019</id>
     <name>Tomato Salad</name>
     <price>8.99</price>
     <quantity>92</quantity>
     <description>Tomato salad made up of tomatoes, boconccini and basil.</description>
   </product>
   <product category="meals">
-    <id>5</id>
+    <id>020</id>
     <name>Salmon in Sauce Rose</name>
     <price>12.50</price>
     <quantity>20</quantity>
     <description>A plate of salmon in rose sauce.</description>
   </product>
   <product category="meals">
-    <id>6</id>
+    <id>021</id>
     <name>Fruit Platter</name>
     <price>5.99</price>
     <quantity>49</quantity>
     <description>A fruit platter made up of orange and lime slides.</description>
   </product>
   <product category="snacks">
-    <id>1</id>
+    <id>022</id>
     <name>Chickpeas</name>
     <price>4</price>
     <quantity>67</quantity>
     <description>Salted Roasted Chickpea Snacks. Loaded with protein, fiber and folate. Healthy and delicious. Natural and organic. </description>
   </product>
   <product category="snacks">
-    <id>2</id>
+    <id>023</id>
     <name>Crackers</name>
     <price>5</price>
     <quantity>130</quantity>
     <description>Premium Salted Cracker. Canada's favourite crackers. Light tasting, crunchy texture. Enjoy with toppings! </description>
   </product>
   <product category="snacks">
-    <id>3</id>
+    <id>024</id>
     <name>Nut Mix</name>
     <price>6</price>
     <quantity>80</quantity>
     <description>Deluxe Mixed Nuts and Fruit Trail Mix. Delicious source of protein and other nutrients. Low in sodium, high on health. </description>
   </product>
   <product category="snacks">
-    <id>4</id>
+    <id>025</id>
     <name>GO! Nuts</name>
     <price>8</price>
     <quantity>150</quantity>
     <description>Natural and delicious. Enjoy our deluxe trail mix blend made from the finest assortment of nuts and berries. This mix is the healthy snack your body craves to get you through the day! </description>
   </product>
   <product category="snacks">
-    <id>5</id>
+    <id>026</id>
     <name>Pistachios</name>
     <price>5</price>
     <quantity>45</quantity>
     <description>Organic Sea Salted Pistachios.</description>
   </product>
   <product category="snacks">
-    <id>6</id>
+    <id>027</id>
     <name>Sunflower Seeds</name>
     <price>2</price>
     <quantity>78</quantity>
     <description>Sunflower Seeds Dill Pickle Flavour. Jumbo fire-roasted seeds for a big kernel crunch. Contains No Artificial Colours or Flavours. </description>
   </product>
-</Grocery>
+<user><id>994</id><email>asdasa@asdasd.asdas</email><password>123</password><firstname>Cacacaca</firstname><lastname>Asdasd</lastname><address>asdasdas</address><city>Asdasdas</city><postalcode>E2E 2E2</postalcode><phonenumber>111 222 3333</phonenumber></user><order><id>820</id><ordernumber>nnnnn</ordernumber><email>nnnnn@asdasdca.cacaca</email><address>annnnnnvava</address><paymentmethod>Mastercard</paymentmethod></order><order><id>993</id><ordernumber>babababa</ordernumber><email>babababa@asdasddasn.sdf</email><address>cacaaca</address><paymentmethod>Paypal</paymentmethod></order><order><id>818</id><ordernumber>asdasdas</ordernumber><email>asdasdasd@asdlasda.asdasdas</email><address>hjkjhkhjjhk</address><paymentmethod>Paypal</paymentmethod></order></Grocery>

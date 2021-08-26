@@ -11,7 +11,7 @@ body{
     height: auto;
     margin: 1%;
     overflow: auto;
-    width: 200px;
+    width: 250px;
 }
 .overviewprice {
     padding: 5%;
@@ -133,4 +133,5 @@ input::-webkit-inner-spin-button {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    
 }}

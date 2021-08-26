@@ -20,7 +20,7 @@
       <header>
         <div class="header-2">
           <!-- main logo and search bar -->
-          <a href="../P1/index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
+          <a href="../P1/index.php" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
           </a>
         </div>
       </header>
@@ -28,7 +28,7 @@
         <div class="container">
           <h1>Edit profile</h1><br>
           <?php
-          $xml = simplexml_load_file('../database.xml');
+          $xml = simplexml_load_file('../private/database.xml');
           $users = $xml->user;
           $email = "";
           $password = "";

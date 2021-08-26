@@ -31,10 +31,10 @@ session_start();
 
         <div class="header-2">
           <!-- main carrot logo and search bar -->
-          <a href="../index.html" class="logo">
+          <a href="../index.php" class="logo">
             <i class="fas fa-carrot" id="favicon"></i><img src="../green_market-logo.png" id="market-name">
           </a>
-          <a href="../index.html" class="logo" id="title">
+          <a href="../index.php" class="logo" id="title">
             <i class="fas fa-carrot" id="favicon"></i>
           </a>
 
@@ -59,7 +59,7 @@ session_start();
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../P2-P3/aisles.html">Aisles</a>
@@ -73,7 +73,7 @@ session_start();
                 </ul>
               </div>
               <span id="shopping-cart"><a href="P4-shopping_cart.php" class="fas fa-shopping-cart" id="shopping-cart"></a></span>
-              <span id="user-login"><a href="../P5/P5-login.html" class="fas fa-user"></a></span>
+              <span id="user-login"><a href="../P5/P5-login.php" class="fas fa-user"></a></span>
             </div>
           </nav>
         </div>
@@ -88,7 +88,7 @@ session_start();
       <section class="product" id="product">
         <div class="box-container-sc">
           <p class="sc-empty" id="sc-empty-text">Shopping cart empty!</p>
-          <form id="scform" method="post" action="save_cart.php">
+          <form id="scform" class = "scform" method="post" action="save_cart.php">
 
             <!-- read cart -->
             <?php include "P4.php" ?>
@@ -98,7 +98,7 @@ session_start();
         </div>
         <div class="overviewprice-box" id="overviewprice-box">
           <div class="overviewprice">
-            <form id="form-payment" action="add_order.php" method="post">
+            <form id="form-payment" action="" method="">
               <p><b>Total(w/o tax):</b> <span id="totalwotax"></span></p>
               <p><b>GST/HST:</b> <span id="gst"></span></p>
               <hr />
@@ -119,15 +119,15 @@ session_start();
       <div class="box-container">
         <div class="box">
           <p id="title-footer" id="link">Quick links</p>
-          <p><a href="../index.html" id="link">Home</a></p>
+          <p><a href="../index.php" id="link">Home</a></p>
           <p><a href="../extra/about.html" id="link">About us</a></p>
           <p><a href="../extra/contact.html" id="link">Contact</a></p>
         </div>
 
         <div class="box">
           <p id="title-footer">Follow us:</p>
-          <p><a href="../https://facebook.com" id="link">Facebook</a></p>
-          <p><a href="../https://instagram.com" id="link">Instagram</a></p>
+          <p><a href="https://facebook.com" id="link">Facebook</a></p>
+          <p><a href="https://instagram.com" id="link">Instagram</a></p>
         </div>
       </div>
       <footer class="copyright">
