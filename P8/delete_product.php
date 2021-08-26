@@ -9,7 +9,7 @@
 
   $xpath = new DOMXPATH($xml);
 
-  foreach ($xpath->query("/Grocery/product[@category = '$category' and id = '$id']")as $node) {
+  foreach ($xpath->query("/Grocery/product[id = '$id']")as $node) {
     $node->parentNode->removeChild($node);
   }
 
