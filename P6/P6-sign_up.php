@@ -50,7 +50,7 @@ if(isset($_POST['login'])) {
     $xml->addChild('city', $city);
     $xml->addChild('postalcode', $postalcode);
     $xmml->adXML('users/' . $username . '.xml.');
-    header('Location: index.php');
+    header('Location: ../index.php');
     die;
   }
 }
@@ -215,7 +215,7 @@ if(isset($_POST['login'])) {
       <div class="container signin">
         <p>
           Already have an account?
-          <a href="../P5/P5-login.html" id="signin">Sign in</a>.
+          <a href="../P5/P5-login.php" id="signin">Sign in</a>.
         </p>
       </div>
     </form>
