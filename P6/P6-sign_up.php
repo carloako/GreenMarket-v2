@@ -50,7 +50,7 @@ if(isset($_POST['login'])) {
     $xml->addChild('city', $city);
     $xml->addChild('postalcode', $postalcode);
     $xmml->adXML('users/' . $username . '.xml.');
-    header('Location: index.php');
+    header('Location: ../index.php');
     die;
   }
 }
@@ -92,7 +92,7 @@ if(isset($_POST['login'])) {
     <header>
       <div class="header-2">
         <!-- main logo and search bar -->
-        <a href="../index.html" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
+        <a href="../index.php" class="logo"><img src="../green_market-logo-backend.png" id="market-name">
         </a>
       </div>
     </header>
@@ -215,7 +215,7 @@ if(isset($_POST['login'])) {
       <div class="container signin">
         <p>
           Already have an account?
-          <a href="../P5/P5-login.html" id="signin">Sign in</a>.
+          <a href="../P5/P5-login.php" id="signin">Sign in</a>.
         </p>
       </div>
     </form>
