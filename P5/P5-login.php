@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $error = false;
   if(isset($_POST['login'])) {
     $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
@@ -23,7 +23,7 @@ $error = false;
     }
     $error = true;
   }
-?>
+?> -->
 
 <!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -74,7 +74,7 @@ $error = false;
 
 <h2>User Login page</h2>
 <!-- login box part -->
-    <form method="post" action="" style="border: 1px">
+    <form method="post" action="login.php" style="border: 1px">
       <div class="container">
         <label for="username"><b>Username</b></label>
         <input
@@ -94,15 +94,15 @@ $error = false;
           required
         />
         <p>
-          <?php
+          <!-- <?php
           if($error) {
             echo'<p>Invalid username and/or password.</p>';
           }
-          ?>
+          ?> -->
           <a href="../extra/forgotpassword.html" style="font-size:80%; float: right;">Forgot your password?</a>
         </p>
         
-        <input type="signup" onclick="location.href='../index.php'" value="Log in" name="login">
+        <input id="loginBtn" class="loginBtn" type="submit" value="Log in" name="login">
       </div>
       
       <!-- create an account link -->

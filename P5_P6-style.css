@@ -4,9 +4,10 @@ This template doesn't address the theme colors, but works to define the design o
 this group of pages. */
 
 /* design of the header specific to P5-P6 and P7-P12 */
-.header-2 {
-    height: 0.05%;
-}
+/* .header-2 {
+    height: 171.3;
+} */
+
 #market-name {
     height: auto;
     width: 30%;
@@ -74,7 +75,7 @@ body input[type=number] {
 }
 
 /* Sign up button style*/
-body input[type=signup] {
+body input[type=submit] {
     width: 100%;
     background-color: #b3c39c;
     color: #f6f8f2;
@@ -87,7 +88,7 @@ body input[type=signup] {
 }
 
 /* add a color when hovering on sign up button */
-body input[type=signup]:hover {
+body input[type=submit]:hover {
     background-color: #c5cfb6;
 }
 

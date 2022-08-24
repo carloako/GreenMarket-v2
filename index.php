@@ -1,3 +1,11 @@
+<?php 
+session_start();
+$namevisibility = "display:none;";
+if(isset($_SESSION['username'])) {
+	$namevisibility = "display:inline;";
+}
+?>
+
 <!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -20,6 +28,8 @@
 </head>
 
 <body>
+	<a href="P5/logout.php">logout</a>
+	<span style=<?php echo $namevisibility ?>><?php echo $_SESSION['username'] ?></span>
 	<div id="page-container">
 		<div id="content-wrap">
 			<header>
@@ -116,9 +126,9 @@
 		<div class="center-table whitebg whole-bd">
 			<div class="center-table-container">
 				<div class="center-table-items item-bottom-bd">
-					<form id = "form1" action="P2-P3/product/product.php" method="get">
+					<form id="form1" action="P2-P3/product/product.php" method="get">
 						<input type="hidden" name="productID" value="006">
-						<a class="items" onclick = "document.getElementById('form1').submit()">
+						<a class="items" onclick="document.getElementById('form1').submit()">
 							<img src="P2-P3/images/strawberries.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Strawberries</h3>
 						</a>
@@ -129,9 +139,9 @@
 					</form>
 				</div>
 				<div class="center-table-items item-bottom-bd">
-					<form id = "form2" action="P2-P3/product/product.php" method="get">
+					<form id="form2" action="P2-P3/product/product.php" method="get">
 						<input type="hidden" name="productID" value="007">
-						<a class="items" onclick = "document.getElementById('form2').submit()">
+						<a class="items" onclick="document.getElementById('form2').submit()">
 							<img src="P2-P3/images/melons.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Melons</h3>
 						</a>
@@ -142,9 +152,9 @@
 					</form>
 				</div>
 				<div class="center-table-items item-bottom-bd">
-					<form id = "form3" action="P2-P3/product/product.php" method="get">
+					<form id="form3" action="P2-P3/product/product.php" method="get">
 						<input type="hidden" name="productID" value="008">
-						<a class="items" onclick = "document.getElementById('form3').submit()">
+						<a class="items" onclick="document.getElementById('form3').submit()">
 							<img src="P2-P3/images/watermelon.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Watermelons</h3>
 						</a>
@@ -155,9 +165,9 @@
 					</form>
 				</div>
 				<div class="center-table-items item-bottom-bd">
-					<form id = "form4" action="P2-P3/product/product.php" method="get">
+					<form id="form4" action="P2-P3/product/product.php" method="get">
 						<input type="hidden" name="productID" value="009">
-						<a class="items" onclick = "document.getElementById('form4').submit()" >
+						<a class="items" onclick="document.getElementById('form4').submit()">
 							<img src="P2-P3/images/mango.jpg" width="200" height="300" class="item-images"></br>
 							<h3 class="item-name">Mangoes</h3>
 						</a>
