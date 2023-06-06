@@ -362,3 +362,6 @@ hr.solid {
     padding: 10px 30px;
 } */
 
+.border {
+    border-color: rgb(142, 155, 124, 0.8) !important;
+}

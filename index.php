@@ -1,8 +1,13 @@
 <?php
-session_start();
-$namevisibility = "display:none;";
-if (isset($_SESSION['username'])) {
-	$namevisibility = "display:inline;";
+include "session.php";
+$currentFolder = getcwd();
+$posOfSlash = strpos($currentFolder, '/') + 1;
+$currentFolder = substr($currentFolder, $posOfSlash);
+$posOfSlash = strpos($currentFolder, '/');
+while($posOfSlash){
+	$posOfSlash += 1;
+	$currentFolder = substr($currentFolder, $posOfSlash);
+	$posOfSlash = strpos($currentFolder, '/');
 }
 ?>
 
@@ -21,6 +26,7 @@ if (isset($_SESSION['username'])) {
 </head>
 
 <body>
+	<a href="login-page/logout.php">logout</a>
 	<div id="page-container">
 		<div id="content-wrap">
 			<?php include "header.php" ?>
@@ -65,39 +71,9 @@ if (isset($_SESSION['username'])) {
 			<div>
 				<h1 class="hr-text">AISLES</h1>
 			</div>
-			<div class="center-table whitebg whole-bd">
-				<div class="center-table-container">
-					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P2-P3/john/fruits.php">
-							<img src="P2-P3/aisles_images/fruits.jpg" width="200" height="300" class="item-images"></br>
-							<h3 class="item-name">Fruits</h3>
-						</a>
-					</div>
-					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P2-P3/francis/beverages.php">
-							<img src="P2-P3/aisles_images/beverages.jpg" width="200" height="300" class="item-images"></br>
-							<h3 class="item-name">Beverages</h3>
-						</a>
-					</div>
-					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P2-P3/eve/prepared-meals.php">
-							<img src="P2-P3/aisles_images/meals.jpg" width="200" height="300" class="item-images"></br>
-							<h3 class="item-name">Meals</h3>
-						</a>
-					</div>
-					<div class="center-table-items item-bottom-bd">
-						<a class="items" href="P2-P3/ulas/snacks-aisle.php">
-							<img src="P2-P3/aisles_images/snacks.jpg" width="200" height="300" class="item-images"></br>
-							<h3 class="item-name">Snacks</h3>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="container-fluid my-4" style="width:100%;">
-				<div class="row">
-					<?php include "aisle-items-homepage.php" ?>
-				</div>
-			</div>
+			<!-- aisle section -->
+			<?php include "aisle-items.php" ?>
+			<!-- end of aisle section -->
 		</div>
 		<br /><br />
 		<!-- common footer section starts-->

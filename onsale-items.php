@@ -18,10 +18,10 @@ if (!$conn) {
             $productid = $row['id'];
             echo '<div class="col-12 col-sm-3">';
             echo "<a href=\"product-page/product.php?productID=$productid\">";
-            echo '  <div class="card text-center mx-3 my-3 my-sm-0" style="">';
+            echo '  <div class="card text-center mx-3 my-3 my-sm-0">';
             echo "      <img src=\"$image_path\" class=\"card-img-top\" alt=\"$name\">";
             echo '      <div class="card-body">';
-            echo "          <h2 class=\"card-title\">$name</h5>";
+            echo "          <h2 class=\"card-title\">$name</h2>";
             echo "          <p class=\card-text\">$price</p>";
             echo "          <p class=\"card-text\">Price: $onsaleprice$</p>";
             echo '      </div>';
