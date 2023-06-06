@@ -52,7 +52,7 @@ body{
 .overviewprice-box {
     margin: auto;
     width: 90%;
-    display: none;
+    /* display: none; */
 }
 #product {
     display:flex;
